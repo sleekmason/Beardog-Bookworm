@@ -43,7 +43,7 @@ Xkill,               xkill,                                         edit-delete
 
 ^tag(rootfiles)
 /etc,                     gksudo pcmanfm /etc,                     folder-documents
-/etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,   folder-documents 
+/etc/apt/sources.list,    gksudo x-terminal-emulator -T 'Micro Editor' -e 'micro ~/.config/openbox/sxhkdrc-open /etc/apt/sources.list',   folder-documents 
 /usr/share,               gksudo pcmanfm /usr/share,               folder-documents
 /usr/bin,                 gksudo pcmanfm /usr/bin,                 folder-documents
 /usr/local/bin,           gksudo pcmanfm /usr/local/bin,           folder-documents
@@ -52,7 +52,7 @@ Xkill,               xkill,                                         edit-delete
 Openbox,             obconf,                                                               obconf
 System Settings,     xfce4-settings-manager,                                               preferences-system
 Tint2 Settings,      tint2conf,                                                            tint2
-Keybinds,            mousepad ~/.config/openbox/sxhkdrc-open,                              document-properties
-Jgmenu,              mousepad ~/.config/jgmenu/README & pcmanfm ~/.config/jgmenu,          document-properties
+Keybinds,            x-terminal-emulator -T 'Micro Editor' -e 'micro ~/.config/openbox/sxhkdrc-open',                              document-properties
+Jgmenu,              x-terminal-emulator -T 'Micro Editor' -e 'micro ~/.config/openbox/sxhkdrc-open ~/.config/jgmenu/README' & pcmanfm ~/.config/jgmenu,          document-properties
 Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
 Grub Background,     x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme
