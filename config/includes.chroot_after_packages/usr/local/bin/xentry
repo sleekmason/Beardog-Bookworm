@@ -179,7 +179,7 @@ _remove_packages() {
 
 _upgrade_kernel() {
       _msg="Install backports kernel and add backport sources?"
-      do_it() { echo 'deb http://deb.debian.org/debian bullseye-backports main' | tee /etc/apt/sources.list.d/bullseye-backports.list &&
+      do_it() { echo 'deb http://deb.debian.org/debian bookworm-backports main' | tee /etc/apt/sources.list.d/bullseye-backports.list &&
 		        apt-get update && apt-get install -y -t bullseye-backports linux-image-amd64 firmware-linux ;}
         see_it
         no_see
@@ -188,7 +188,7 @@ _upgrade_kernel() {
 
 _add_backports() {
       _msg="Or just add backports sources and update?"
-      do_it() { echo 'deb http://deb.debian.org/debian bullseye-backports main' | tee /etc/apt/sources.list.d/bullseye-backports.list &&
+      do_it() { echo 'deb http://deb.debian.org/debian bookworm-backports main' | tee /etc/apt/sources.list.d/bullseye-backports.list &&
 		        apt-get update ;}
         see_it
         no_see
