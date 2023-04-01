@@ -1,0 +1,28 @@
+#!/bin/sh
+
+lb config noauto \
+     --apt-recommends 'false' \
+     --apt-source-archives 'false' \
+     --apt-indices 'false' \
+     --archive-areas "main contrib non-free non-free-firmware" \
+     --debian-installer 'live' \
+     --parent-debian-installer-distribution 'daily' \
+     --debian-installer-distribution 'bookworm' \
+     --distribution 'bookworm' \
+     --mirror-binary 'https://deb.debian.org/debian' \
+     --mirror-binary-security 'https://security.debian.org/debian-security' \
+     --mirror-bootstrap 'https://deb.debian.org/debian' \
+     --firmware-binary 'true' \
+     --firmware-chroot 'true' \
+     --security 'true' \
+     --memtest 'none' \
+     --image-name 'Beardog-Bookworm-23.04.01' \
+     --iso-application 'Beardog-Bookworm' \
+     --iso-publisher 'Beardog-bookworm GNU/Linux' \
+     --iso-volume 'Beardog-Bookworm' \
+     --system 'live' \
+     --updates 'true' \
+     --win32-loader 'false' \
+     --zsync 'false' \
+     --quiet \
+     "${@}"

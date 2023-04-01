@@ -1,0 +1,13 @@
+                       
+                          WELCOME!
+                        
+    Thank you for trying out Beardog. Please feel
+    free to join the Lilidog discussion forum if you
+    would like further information or for reporting
+    any issues.
+
+    https://www.forum.lilidog.org/
+    
+    This is the Beardog Minimal version, allowing 
+    the user to install their own packages.  For a 
+    complete setup install the Lilidog full version.

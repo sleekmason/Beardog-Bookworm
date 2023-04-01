@@ -1,0 +1,31 @@
+[0;36mBeardog GNU/Linux 12 \n \l
+\d \t
+
+
+         +DDDL+ +LDDDDD+ 
+       LD++++D+D+::::::+D 
+      D+-::::=D+::::::::+LLDD+ 
+     D=::::::=L=-::::::=LL++=+D 
+     D-:::::=LDD=-::-=+L=-::::=D 
+     L+--==+++===++LDD+:::::::-D 
+   DL+++==:::::::::-+D-:::::::=D 
+  D=:::::::::::::::::++:::::-+D 
+ D+::::::::::::::::::+D++==+LD+ 
+  D=:::::::::::::::::+LD+=--:-+D 
+   L+=-::::::::::::::L+-::::::=D 
+    DLL++-::::::::::-D:::::::-+D 
+        DL+:::::::::+D=-:::-=+D 
+          D=:::::::-D +LDLLD+ 
+           L+--::-=D     
+            +LDLDD+ 
+
+
+After entering username and password
+Type 'startx' to enter Openbox or if
+you want to customize beforehand:
+
+'sudo xentry -i'  interactive prompt
+'sudo xentry' All options answer yes
+[0m
+
+

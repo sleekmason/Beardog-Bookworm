@@ -1,0 +1,4 @@
+Appearance Settings,        xfce4-appearance-settings,                preferences-system
+Openbox Settings,           obconf,                                   obconf
+Sounds,                     notification-sounds,                      audio-headphones
+Wallpapers,                 feh-set-wallpaper,                        org.xfce.settings.display

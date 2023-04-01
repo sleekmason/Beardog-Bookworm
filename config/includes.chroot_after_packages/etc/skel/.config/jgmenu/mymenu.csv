@@ -1,0 +1,58 @@
+Type To Search,o,input-keyboard
+^sep()
+Terminal,           lxterminal,       utilities-terminal
+Pcmanfm,             pcmanfm,         org.xfce.filemanager
+^sep()
+Quick Grab,^checkout(quickgrab),applications-other
+^sep()
+Toggles,^checkout(toggles),/usr/share/icons/ld-icons/toggle.png
+Utilities,^checkout(utilities),applications-utilities
+Configuration,^checkout(configuration),preferences-system
+^sep()
+All Programs,^pipe(jgmenu_run apps),debian-logo
+^sep()
+Restart,    openbox --restart,        /usr/share/icons/ld-icons/pixmaps/logout_reboot.png
+Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.png
+
+^tag(quickgrab)
+Root Folders,^checkout(rootfiles),folder
+Micro,              x-terminal-emulator -T 'Micro Editor' -e 'micro',          document-properties
+Development,^checkout(development),applications-development
+
+^tag(development)
+Icon Browser,       yad-icon-browser,                  preferences-system
+
+^tag(utilities)
+Gparted,            gksudo gparted,                   gparted
+HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
+Color Chooser,      yad --color,                      org.xfce.settings.color
+Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
+Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
+Live USB Maker,     x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
+Nvidia Installer,   x-terminal-emulator -T 'Nvidia Drivers Installer' -e bash -c "nvidia-ddmmx-installer",     preferences-other
+Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
+
+^tag(toggles)
+Random BG,           toggle-wallpaper-random,                       preferences-system
+Jgmenu Icons,        jg-icon-changer,                               preferences-system
+Jgmenu Matcher,      jg-menu-theme,                                 preferences-system
+Tint2 Options,       tint2-options,                                 preferences-system
+Tint2 Toggle,        toggle.tint2,                                  preferences-system
+Touchpad,            toggle-touchpad,                               preferences-system
+Xkill,               xkill,                                         edit-delete
+
+^tag(rootfiles)
+/etc,                     gksudo pcmanfm /etc,                     folder-documents
+/etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,   folder-documents 
+/usr/share,               gksudo pcmanfm /usr/share,               folder-documents
+/usr/bin,                 gksudo pcmanfm /usr/bin,                 folder-documents
+/usr/local/bin,           gksudo pcmanfm /usr/local/bin,           folder-documents
+
+^tag(configuration)
+Openbox,             obconf,                                                               obconf
+System Settings,     xfce4-settings-manager,                                               preferences-system
+Tint2 Settings,      tint2conf,                                                            tint2
+Keybinds,            mousepad ~/.config/openbox/sxhkdrc-open,                              document-properties
+Jgmenu,              mousepad ~/.config/jgmenu/README & pcmanfm ~/.config/jgmenu,          document-properties
+Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
+Grub Background,     x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme

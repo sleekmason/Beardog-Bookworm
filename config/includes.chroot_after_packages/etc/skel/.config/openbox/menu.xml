@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item icon="/usr/share/icons/Adwaita/24x24/legacy/utilities-terminal.png" label="Terminal">
+			<action name="Execute">
+				<execute>lxterminal</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon="/usr/share/icons/Adwaita/24x24/legacy/system-file-manager.png" label="Pcmanfm">
+			<action name="Execute">
+				<execute>pcmanfm</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
+		<separator/>
+		<menu icon="/usr/share/icons/Adwaita/24x24/legacy/applications-accessories.png" id="root-menu-594711" label="Quick Grab">
+			<menu execute="pipe-recent-files" icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" id="ID41" label="Recent Files"/>
+			<menu icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" id="root-menu-594711-105346" label="Root Files">
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/etc">
+					<action name="Execute">
+						<execute>gksudo pcmanfm /etc</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/etc/apt/sources.list">
+					<action name="Execute">
+						<execute>gksudo mousepad /etc/apt/sources.list</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share">
+					<action name="Execute">
+						<execute>gksudo pcmanfm /usr/share</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share/fonts">
+					<action name="Execute">
+						<execute>gksudo pcmanfm /usr/share/fonts</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share/icons">
+					<action name="Execute">
+						<execute>gksudo pcmanfm /usr/share/icons</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share/themes">
+					<action name="Execute">
+						<execute>gksudo pcmanfm /usr/share/themes</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/bin">
+					<action name="Execute">
+						<execute>gksudo pcmanfm /usr/bin</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/local/bin">
+					<action name="Execute">
+						<execute>gksudo pcmanfm /usr/local/bin</execute>
+					</action>
+				</item>
+			</menu>
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/accessories-text-editor.png" label="Mousepad">
+				<action name="Execute">
+					<execute>mousepad</execute>
+				</action>
+			</item>
+		</menu>
+		<menu icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" id="root-menu-721334" label="Toggles">
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Tint2 Panel Toggle">
+				<action name="Execute">
+					<execute>toggle.tint2</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Hotcorners">
+				<action name="Execute">
+					<execute>toggle.ld</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Theme Options">
+					<action name="Execute">
+						<execute>beardog-themer</execute>
+					</action>
+				</item>
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Touchpad">
+				<action name="Execute">
+					<execute>toggle-touchpad</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Mouse Finder">
+				<action name="Execute">
+					<execute>toggle-mouse-pointer</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Random BG">
+				<action name="Execute">
+					<execute>toggle-wallpaper-random</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="X-Kill">
+				<action name="Execute">
+					<execute>xkill</execute>
+				</action>
+			</item>
+		</menu>
+		<!--<separator/> -->
+		<!-- <menu id="/Debian"/> -->
+		<separator/>
+		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/ld-icons/debian-logo.png" id="applications-menu" label="All Programs"/>
+		<separator/>
+		<menu icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-other.png" id="root-menu-4985" label="Utilities">
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/drive-multidisk.png" label="Gparted">
+				<action name="Execute">
+					<execute>gksudo gparted</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-system-network.png" label="Lx-Randr">
+				<action name="Execute">
+					<execute>lxrandr</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/drive-multidisk.png" label="Live USB Maker">
+				<action name="Execute">
+					<execute>x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix"</execute>
+				</action>
+			</item>
+						<item icon="/usr/share/icons/Adwaita/24x24/legacy/edit-cut.png" label="Kernel Remover">
+				<action name="Execute">
+					<execute>kernel-remover</execute>
+				</action>
+			</item>
+		<item icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-other.png" label="Nvidia Installer">
+				<action name="Execute">
+					<execute>x-terminal-emulator -T 'Nvidia Drivers Installer' -e bash -c "nvidia-ddmmx-installer"</execute>
+				</action>
+			</item>
+		<item icon="/usr/share/icons/Adwaita/24x24/legacy/applications-accessories.png" label="DkWM Installer">
+				<action name="Execute">
+					<execute>x-terminal-emulator -T 'dk Installer' -e bash -c "dk-installer"</execute>
+				</action>
+			</item>
+		</menu>
+		<menu icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-system.png" id="root-menu-21510" label="Configuration">
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-desktop-theme.png" label="Settings Manager">
+					<action name="Execute">
+						<execute>xfce4-settings-manager</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/pixmaps/obconf.png" label="Openbox Conf">
+					<action name="Execute">
+						<execute>obconf</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/applications-science.png" label="Tint2 Conf">
+					<action name="Execute">
+						<execute>tint2conf</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/tools-check-spelling.png" label="Dmenu Apps Conf">
+					<action name="Execute">
+						<execute>mousepad ~/.config/dmenu/apps</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-desktop.png" label="Ld-hotcorners Conf">
+					<action name="Execute">
+						<execute>mousepad ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
+					</action>
+				</item>
+			</menu>
+		<separator/>
+		<item icon="/usr/share/icons/ld-icons/pixmaps/logout_reboot.png" label="Restart">
+			<action name="Restart"/>
+		</item>
+		<separator/>
+		<item icon="/usr/share/icons/ld-icons/exit4.png" label="Exit">
+			<action name="Execute">
+				<execute>ld-logout</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>

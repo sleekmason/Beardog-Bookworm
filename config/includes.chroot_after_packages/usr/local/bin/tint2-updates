@@ -1,0 +1,9 @@
+#!/bin/bash
+
+yad --title "Options" --escape-ok \
+--button=gtk-cancel:0 --form --center --geometry=210x180-200-50 --borders=6 \
+--text="\n" --text-align=center \
+--window-icon=applications-utilities \
+    --form \
+    --field="   Check For Updates!applications-other":FBTN "tint2-apt-update-check" \
+    --field="               Apt Update!system-software-update":FBTN "x-terminal-emulator -T 'Apt Update' -e 'sudo xupdate -i'" \
