@@ -32,6 +32,7 @@
 
 ### Common startup programs. Comment any item no longer wanted.
 . $HOME/.fehbg &
+picom &
 tint2 &
 nm-applet &
 lxpolkit &

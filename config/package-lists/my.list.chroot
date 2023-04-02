@@ -22,6 +22,7 @@ dbus-x11
 desktop-base
 dialog
 dosfstools
+dunst
 e2fsprogs
 efibootmgr
 eject
@@ -82,8 +83,8 @@ os-prober
 oss-compat
 pavucontrol
 pciutils
-pcmanfm
 pcmciautils
+picom
 pipewire-alsa
 pipewire-pulse
 powermgmt-base
@@ -107,6 +108,12 @@ systemd-timesyncd
 tasksel
 telnet
 tint2
+thunar
+thunar-archive-plugin
+thunar-gtkhash
+thunar-media-tags-plugin
+thunar-volman
+tumbler
 traceroute
 unzip
 update-inetd
