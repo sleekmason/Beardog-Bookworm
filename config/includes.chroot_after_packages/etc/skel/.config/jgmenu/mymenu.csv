@@ -16,7 +16,7 @@ Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.p
 
 ^tag(quickgrab)
 Root Folders,^checkout(rootfiles),folder
-Micro,              x-terminal-emulator -T 'Micro Editor' -e 'micro',          document-properties
+Leafpad,              l3afpad,          document-properties
 Development,^checkout(development),applications-development
 
 ^tag(development)
@@ -39,12 +39,13 @@ Jgmenu Matcher,      jg-menu-theme,                                 preferences-
 Tint2 Options,       tint2-options,                                 preferences-system
 Tint2 Toggle,        toggle.tint2,                                  preferences-system
 Touchpad,            toggle-touchpad,                               preferences-system
+OSprober,            osprober-toggle,                               preferences-system
 Sounds,              notification-sounds,                           preferences-system
 Xkill,               xkill,                                         edit-delete
 
 ^tag(rootfiles)
 /etc,                     gksudo thunar /etc,                     folder-documents
-/etc/apt/sources.list,    gksudo x-terminal-emulator -T 'Micro Editor' -e 'micro ~/.config/openbox/sxhkdrc-open /etc/apt/sources.list',   folder-documents 
+/etc/apt/sources.list,    gksudo l3afpad /etc/apt/sources.list,  folder-documents
 /usr/share,               gksudo thunar /usr/share,               folder-documents
 /usr/bin,                 gksudo thunar /usr/bin,                 folder-documents
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
@@ -54,7 +55,7 @@ Openbox,             obconf,                                                    
 System Settings,     xfce4-settings-manager,                                               preferences-system
 Power Manager,       xfce4-power-manager-settings,                                         applications-system
 Tint2 Settings,      tint2conf,                                                            tint2
-Keybinds,            x-terminal-emulator -T 'Micro Editor' -e 'micro ~/.config/openbox/sxhkdrc-open',                              document-properties
-Jgmenu,              x-terminal-emulator -T 'Micro Editor' -e 'micro ~/.config/openbox/sxhkdrc-open ~/.config/jgmenu/README' & thunar ~/.config/jgmenu,          document-properties
+Keybinds,            l3afpad ~/.config/openbox/sxhkdrc-open,                              document-properties
+Jgmenu,              x-terminal-emulator -T 'l3afpad Editor' -e 'l3afpad ~/.config/openbox/sxhkdrc-open ~/.config/jgmenu/README' & thunar ~/.config/jgmenu,          document-properties
 Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
 Grub Background,     x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme
