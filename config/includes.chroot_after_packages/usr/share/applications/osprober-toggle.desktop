@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Lilidog Installers
-Exec=ld-installers
+Name=OSprober toggle
+Exec=osprober-toggle
 StartupNotify=false
 Terminal=false
-Icon=applications-utilities
+Icon=applications-system
 Categories=System;

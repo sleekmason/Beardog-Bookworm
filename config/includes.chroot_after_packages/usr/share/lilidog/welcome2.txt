@@ -1,13 +1,22 @@
                        
-                          WELCOME!
+                    WELCOME TO BEARDOG!
                         
-    Thank you for trying out Beardog. Please feel
-    free to join the Lilidog discussion forum if you
-    would like further information or for reporting
-    any issues.
-
-    https://www.forum.lilidog.org/
+    Welcome to the Beardog Bookworm version
+    allowing users to select and install packages
+    based on want or need.
     
-    This is the Beardog Minimal version, allowing 
-    the user to install their own packages.  For a 
-    complete setup install the Lilidog full version.
+    To report any issues:
+    https://www.forum.lilidog.org/
+
+    To install Beardog, click on the green button
+    in the system tray, or from the main menu -
+    All Programs - System - Install Beardog. The 
+    'root' password  for the session is 'live'.
+    
+    The debian installer is also an option should
+    you prefer it. Reboot to access the menu.
+
+    After installation, try the setup script in the
+    welcome prompt or from the menu to see 
+    other options you might like to have.
+

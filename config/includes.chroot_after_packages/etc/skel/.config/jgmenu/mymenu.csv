@@ -16,7 +16,7 @@ Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.p
 
 ^tag(quickgrab)
 Root Folders,^checkout(rootfiles),folder
-Leafpad,              l3afpad,          document-properties
+Micro Editor,       x-terminal-emulator -T 'Micro Editor - Ctrl + g for Editor Options' -e 'micro',          document-properties
 Development,^checkout(development),applications-development
 
 ^tag(development)
@@ -30,23 +30,23 @@ Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remo
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Live USB Maker,     x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
-Lilidog Setup,      x-terminal-emulator -T "Lilidog Setup" -e bash -c "sudo ld-entry -i; read -srn1", applications-other
+Beardog Setup,      x-terminal-emulator -T "Beardog Setup" -e bash -c "sudo /usr/local/bin/xentry -i; read -srn1", applications-other
 
 ^tag(toggles)
 Picom,               toggle.picom,                                  preferences-system
+Sounds,              notification-sounds,                           preferences-system
+Touchpad,            toggle-touchpad,                               preferences-system
 Random BG,           toggle-wallpaper-random,                       preferences-system
 Jgmenu Icons,        jg-icon-changer,                               preferences-system
 Jgmenu Matcher,      jg-menu-theme,                                 preferences-system
 Tint2 Options,       tint2-options,                                 preferences-system
 Tint2 Toggle,        toggle.tint2,                                  preferences-system
-Touchpad,            toggle-touchpad,                               preferences-system
 OSprober,            osprober-toggle,                               preferences-system
-Sounds,              notification-sounds,                           preferences-system
 Xkill,               xkill,                                         edit-delete
 
 ^tag(rootfiles)
 /etc,                     gksudo thunar /etc,                     folder-documents
-/etc/apt/sources.list,    gksudo l3afpad /etc/apt/sources.list,  folder-documents
+/etc/apt/sources.list,    x-terminal-emulator -T 'sources.list - Ctrl + g for Editor Options' -e "sudo micro /etc/apt/sources.list",     folder-documents
 /usr/share,               gksudo thunar /usr/share,               folder-documents
 /usr/bin,                 gksudo thunar /usr/bin,                 folder-documents
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
@@ -56,7 +56,7 @@ Openbox,             obconf,                                                    
 System Settings,     xfce4-settings-manager,                                               preferences-system
 Power Manager,       xfce4-power-manager-settings,                                         applications-system
 Tint2 Settings,      tint2conf,                                                            tint2
-Keybinds,            l3afpad ~/.config/openbox/sxhkdrc-open,                              document-properties
-Jgmenu,              x-terminal-emulator -T 'l3afpad Editor' -e 'l3afpad ~/.config/openbox/sxhkdrc-open ~/.config/jgmenu/README' & thunar ~/.config/jgmenu,          document-properties
+Keybinds,            x-terminal-emulator -T 'Keybinds - Ctrl + g for Editor Options' -e 'micro ~/.config/openbox/sxhkdrc-open',                              document-properties
+Jgmenu,              x-terminal-emulator -T 'Jgmenu - Ctrl + g for Editor Options' -e 'micro ~/.config/jgmenu/README' & thunar ~/.config/jgmenu,          document-properties
 Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
 Grub Background,     x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme
