@@ -30,6 +30,7 @@ Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remo
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Live USB Maker,     x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
+Lilidog Setup,      x-terminal-emulator -T "Lilidog Setup" -e bash -c "sudo ld-entry -i; read -srn1", applications-other
 
 ^tag(toggles)
 Picom,               toggle.picom,                                  preferences-system
