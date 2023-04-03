@@ -222,7 +222,6 @@ _reboot() {
 }
 
 _update
-#_add_lightdm
 #_add_jgmenu
 #_add_notifications
 #_add_conky
@@ -231,6 +230,7 @@ _update
 _remove_packages
 _upgrade_kernel
 _add_backports
+_add_lightdm
 _osprober
 _firmware
 _reboot
