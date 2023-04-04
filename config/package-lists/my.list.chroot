@@ -125,6 +125,7 @@ usermode
 user-setup
 uuid-runtime
 va-driver-all
+vdpau-driver-all
 wget
 wmctrl
 x11-apps
