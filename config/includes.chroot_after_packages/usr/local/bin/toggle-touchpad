@@ -7,4 +7,4 @@ yad --title "Touchpad" --button=gtk-ok:0 --form --center --width=232 --borders=4
     --field="Tap To Click Off":FBTN "bash -c 'touchpad-off'" \
     --field="":LBL "" \
     --field="":LBL "" \
-    --field="Enable On Boot":FBTN "x-terminal-emulator -T 'Openbox Autostart - Ctrl + g for Editor Options' -e 'micro ~/.config/openbox/sxhkdrc-open'" \
+    --field="Enable On Boot":FBTN "geany ~/.config/openbox/sxhkdrc-open" \
