@@ -16,7 +16,7 @@ Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.p
 
 ^tag(quickgrab)
 Root Folders,^checkout(rootfiles),folder
-Micro Editor,       x-terminal-emulator -T 'Micro Editor - Ctrl + g for Editor Options' -e 'micro',          document-properties
+Geany Editor,       geany,          geany
 Development,^checkout(development),applications-development
 
 ^tag(development)
@@ -47,7 +47,7 @@ Xkill,               xkill,                                         edit-delete
 
 ^tag(rootfiles)
 /etc,                     gksudo thunar /etc,                     folder-documents
-/etc/apt/sources.list,    x-terminal-emulator -T 'sources.list - Ctrl + g for Editor Options' -e "sudo micro /etc/apt/sources.list",     folder-documents
+/etc/apt/sources.list,    gksudo geany /etc/apt/sources.list,     folder-documents
 /usr/share,               gksudo thunar /usr/share,               folder-documents
 /usr/bin,                 gksudo thunar /usr/bin,                 folder-documents
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
@@ -57,7 +57,7 @@ Openbox,             obconf,                                                    
 System Settings,     xfce4-settings-manager,                                               preferences-system
 Power Manager,       xfce4-power-manager-settings,                                         applications-system
 Tint2 Settings,      tint2conf,                                                            tint2
-Keybinds,            x-terminal-emulator -T 'Keybinds - Ctrl + g for Editor Options' -e 'micro ~/.config/openbox/sxhkdrc-open',                              document-properties
-Jgmenu,              x-terminal-emulator -T 'Jgmenu - Ctrl + g for Editor Options' -e 'micro ~/.config/jgmenu/README' & thunar ~/.config/jgmenu,          document-properties
+Keybinds,            geany ~/.config/openbox/sxhkdrc-open',                                document-properties
+Jgmenu,              geany ~/.config/jgmenu/README' & thunar ~/.config/jgmenu,             document-properties
 Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
 Grub Background,     x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme

@@ -36,6 +36,7 @@ file
 firmware-b43-installer
 firmware-b43legacy-installer
 fuse3
+geany
 gettext-base
 gnome-icon-theme
 gnome-themes-extra
@@ -73,7 +74,6 @@ mesa-vdpau-drivers
 mesa-vulkan-drivers
 mailcap
 mime-support
-micro
 nano
 ncdu
 net-tools
