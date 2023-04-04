@@ -25,6 +25,7 @@ Icon Browser,       yad-icon-browser,                  preferences-system
 ^tag(utilities)
 Gparted,            gksudo gparted,                   gparted
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
+Apt Update,         tint2-updates,                    system-software-update
 Color Chooser,      yad --color,                      org.xfce.settings.color
 Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
