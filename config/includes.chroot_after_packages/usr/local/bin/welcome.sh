@@ -11,7 +11,7 @@ if grep -q "$fs" /proc/partitions; then
 --text-info --justify=left --wrap < /usr/share/lilidog/welcome.txt --fontname="Sans 11" \
 --fore="#C0DDEB"; sed -i '/welcome.sh &/d' ~/.config/openbox/autostart && exit
 else
-  yad --notification --image=/usr/share/icons/ld-icons/install.png --text "Install Beardog" --command "gksudo calamares" &
+  yad --notification --image=/usr/share/icons/ld-icons/install.png --text "Install Beardog - User password = 'user' - Root password = 'live'" --command "gksudo calamares" &
   yad --title "Welcome!" --window-icon=/usr/share/icons/ld-icons/paw-color.png \
 --width=375 --height=485 --center --escape-ok --undecorated --skip-taskbar \
 --button="gtk-ok:0" \
