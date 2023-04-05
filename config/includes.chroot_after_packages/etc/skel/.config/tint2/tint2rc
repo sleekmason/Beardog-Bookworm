@@ -174,7 +174,7 @@ time2_timezone =
 clock_font_color = #cadbeb 100
 clock_padding = 4 0
 clock_background_id = 0
-clock_tooltip = Left Click = Calendar - Middle Click = Multi Timer - Right-Click = Timezone Changer
+clock_tooltip = Left Click = Calendar - Right-Click = Timezone Changer
 clock_tooltip_timezone = 
 clock_lclick_command = calendar
 clock_rclick_command = x-terminal-emulator -T 'Timezone Changer' -e "timezone-changer" && pkill -x tint2 ; tint2 &
