@@ -135,7 +135,7 @@ uuid-runtime
 va-driver-all
 vdpau-driver-all
 wget
-ireplumber
+wireplumber
 wmctrl
 x11-apps
 x11-common
