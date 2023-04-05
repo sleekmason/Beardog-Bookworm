@@ -105,6 +105,7 @@ rsync
 squashfs-tools
 suckless-tools
 sudo
+ssft
 sxhkd
 syslinux-common
 systemd-timesyncd
