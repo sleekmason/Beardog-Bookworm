@@ -15,7 +15,7 @@ notify-send  -t 10000 --urgency low "OSprober Is Currently Enabled"
 fi
 
   yad --title "OSprober Toggle" --window-icon=applications-utilities \
---width=488 --height=360 --center --escape-ok \
+--width=375 --height=340 --center --escape-ok \
 --button="View Log"!/usr/share/icons/gnome/22x22/apps/accessories-text-editor.png!:"geany /var/log/grub-update.log" \
 --button="Toggle On/Off"!/usr/share/icons/gnome/22x22/actions/object-flip-horizontal.png!:"gksudo /usr/local/bin/osprober-toggle-backend" \
 --button="gtk-quit:1" --buttons-layout=spread \
