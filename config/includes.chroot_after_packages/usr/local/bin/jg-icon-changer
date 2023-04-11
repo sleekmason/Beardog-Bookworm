@@ -8,18 +8,9 @@ noti=$(yad --width 444 --borders=10 --entry --title "Jgmenu Icon & Font Options"
     --button="gtk-ok:0" \
     --text "  Adwaita and Gnome icons are installed. \n  Use 'Install Icons' for more icon themes.\n" \
     --entry-text \
-    "Please Select Menu Icon Theme" "Adwaita - Default" "Gnome" "Buuf" "Breeze" "Breeze-Dark" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Obsidian" "Off")
+    "Please Select Menu Icon Theme" "Gnome - Default" "Adwaita" "Buuf" "Breeze" "Breeze-Dark" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Obsidian" "Off")
 
 case $noti in
-  Adwaita*)
-   if [[ -d "/usr/share/icons/Adwaita" ]]
-then
-     sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
-     sed -i 's/^icon_theme =.*/icon_theme = Adwaita/g' ~/.config/jgmenu/jgmenurc   
-notify-send --urgency low 'Menu Icons Set To Adwaita'
-else
-notify-send --urgency low "Adwaita icons are not currently installed"
-fi ;;
   Gnome*) 
    if [[ -d "/usr/share/icons/gnome" ]]
 then
@@ -29,6 +20,15 @@ notify-send --urgency low 'Menu Icons Set To Gnome'
 else
 notify-send --urgency low "Gnome icons are not currently installed"
 fi  ;;
+  Adwaita*)
+   if [[ -d "/usr/share/icons/Adwaita" ]]
+then
+     sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
+     sed -i 's/^icon_theme =.*/icon_theme = Adwaita/g' ~/.config/jgmenu/jgmenurc   
+notify-send --urgency low 'Menu Icons Set To Adwaita'
+else
+notify-send --urgency low "Adwaita icons are not currently installed"
+fi ;;
   Buuf)
      if [[ -d "/usr/share/icons/buuf-nestort" ]]
 then
