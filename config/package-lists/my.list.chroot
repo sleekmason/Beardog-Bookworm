@@ -9,6 +9,7 @@ apt-xapian-index
 b43-fwcutter
 bash-completion
 bind9-dnsutils
+btrfs-progs
 bzip2
 ca-certificates
 calamares
@@ -49,6 +50,7 @@ gvfs-backends
 gvfs-fuse
 intel-microcode
 isc-dhcp-client
+iw
 jgmenu
 kbd
 libavcodec-extra
@@ -129,6 +131,8 @@ uuid-runtime
 va-driver-all
 vdpau-driver-all
 wget
+wpasupplicant
+wireless-regdb
 wireplumber
 wmctrl
 x11-apps
