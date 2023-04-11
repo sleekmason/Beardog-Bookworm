@@ -232,7 +232,7 @@ _upgrade_kernel
 _add_backports
 _add_lightdm
 _osprober
-_firmware
+#_firmware
 _reboot
 
 [ "$_interactive" = "yes" ] &&
