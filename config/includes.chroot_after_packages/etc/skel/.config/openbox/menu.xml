@@ -7,9 +7,9 @@
 			</action>
 		</item>
 		<separator/>
-		<item icon="/usr/share/icons/Adwaita/24x24/legacy/system-file-manager.png" label="Pcmanfm">
+		<item icon="/usr/share/icons/Adwaita/24x24/legacy/system-file-manager.png" label="Thunar">
 			<action name="Execute">
-				<execute>pcmanfm</execute>
+				<execute>thunar</execute>
 			</action>
 		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
@@ -19,48 +19,48 @@
 			<menu icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" id="root-menu-594711-105346" label="Root Files">
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/etc">
 					<action name="Execute">
-						<execute>gksudo pcmanfm /etc</execute>
+						<execute>gksudo thunar /etc</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/etc/apt/sources.list">
 					<action name="Execute">
-						<execute>gksudo mousepad /etc/apt/sources.list</execute>
+						<execute>gksudo geany /etc/apt/sources.list</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share">
 					<action name="Execute">
-						<execute>gksudo pcmanfm /usr/share</execute>
+						<execute>gksudo thunar /usr/share</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share/fonts">
 					<action name="Execute">
-						<execute>gksudo pcmanfm /usr/share/fonts</execute>
+						<execute>gksudo thunar /usr/share/fonts</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share/icons">
 					<action name="Execute">
-						<execute>gksudo pcmanfm /usr/share/icons</execute>
+						<execute>gksudo thunar /usr/share/icons</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share/themes">
 					<action name="Execute">
-						<execute>gksudo pcmanfm /usr/share/themes</execute>
+						<execute>gksudo thunar /usr/share/themes</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/bin">
 					<action name="Execute">
-						<execute>gksudo pcmanfm /usr/bin</execute>
+						<execute>gksudo thunar /usr/bin</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/local/bin">
 					<action name="Execute">
-						<execute>gksudo pcmanfm /usr/local/bin</execute>
+						<execute>gksudo thunar /usr/local/bin</execute>
 					</action>
 				</item>
 			</menu>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/accessories-text-editor.png" label="Mousepad">
+			<item icon="/usr/share/icons/Adwaita/24x24/legacy/accessories-text-editor.png" label="Geany">
 				<action name="Execute">
-					<execute>mousepad</execute>
+					<execute>geany</execute>
 				</action>
 			</item>
 		</menu>
@@ -156,12 +156,12 @@
 				</item>
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/tools-check-spelling.png" label="Dmenu Apps Conf">
 					<action name="Execute">
-						<execute>mousepad ~/.config/dmenu/apps</execute>
+						<execute>geany ~/.config/dmenu/apps</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-desktop.png" label="Ld-hotcorners Conf">
 					<action name="Execute">
-						<execute>mousepad ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
+						<execute>geany ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
 					</action>
 				</item>
 			</menu>
