@@ -15,6 +15,7 @@ Restart,    openbox --restart,        /usr/share/icons/ld-icons/pixmaps/logout_r
 Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.png
 
 ^tag(quickgrab)
+Recent Files,^pipe(jgmenu_run ob --cmd="pipe-recent-files",folder
 Root Folders,^checkout(rootfiles),folder
 Geany Editor,       geany,          geany
 Development,^checkout(development),applications-development
