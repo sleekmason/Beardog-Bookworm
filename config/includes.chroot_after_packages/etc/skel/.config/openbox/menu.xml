@@ -1,101 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
-		<item icon="/usr/share/icons/Adwaita/24x24/legacy/utilities-terminal.png" label="Terminal">
+		<item icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png" label="Terminal">
 			<action name="Execute">
 				<execute>lxterminal</execute>
 			</action>
 		</item>
 		<separator/>
-		<item icon="/usr/share/icons/Adwaita/24x24/legacy/system-file-manager.png" label="Thunar">
+		<item icon="/usr/share/icons/gnome/24x24/apps/system-file-manager.png" label="Thunar">
 			<action name="Execute">
 				<execute>thunar</execute>
 			</action>
 		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
-		<menu icon="/usr/share/icons/Adwaita/24x24/legacy/applications-accessories.png" id="root-menu-594711" label="Quick Grab">
-			<menu execute="pipe-recent-files" icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" id="ID41" label="Recent Files"/>
-			<menu icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" id="root-menu-594711-105346" label="Root Files">
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/etc">
+		<menu icon="/usr/share/icons/gnome/24x24/categories/applications-accessories.png" id="root-menu-594711" label="Quick Grab">
+			<menu execute="pipe-recent-files" icon="/usr/share/icons/gnome/24x24/places/folder.png" id="ID41" label="Recent Files"/>
+			<menu icon="/usr/share/icons/gnome/24x24/places/folder.png" id="root-menu-594711-105346" label="Root Files">
+				<item icon="/usr/share/icons/gnome/24x24/places/folder.png" label="/etc">
 					<action name="Execute">
 						<execute>gksudo thunar /etc</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/etc/apt/sources.list">
+				<item icon="/usr/share/icons/gnome/24x24/places/folder.png" label="/etc/apt/sources.list">
 					<action name="Execute">
 						<execute>gksudo geany /etc/apt/sources.list</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share">
+				<item icon="/usr/share/icons/gnome/24x24/places/folder.png" label="/usr/share">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/share</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share/fonts">
+				<item icon="/usr/share/icons/gnome/24x24/places/folder.png" label="/usr/share/fonts">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/share/fonts</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share/icons">
+				<item icon="/usr/share/icons/gnome/24x24/places/folder.png" label="/usr/share/icons">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/share/icons</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/share/themes">
+				<item icon="/usr/share/icons/gnome/24x24/places/folder.png" label="/usr/share/themes">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/share/themes</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/bin">
+				<item icon="/usr/share/icons/gnome/24x24/places/folder.png" label="/usr/bin">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/bin</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/folder-visiting.png" label="/usr/local/bin">
+				<item icon="/usr/share/icons/gnome/24x24/places/folder.png" label="/usr/local/bin">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/local/bin</execute>
 					</action>
 				</item>
 			</menu>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/accessories-text-editor.png" label="Geany">
+			<item icon="/usr/share/icons/gnome/24x24/apps/accessories-text-editor.png" label="Geany">
 				<action name="Execute">
 					<execute>geany</execute>
 				</action>
 			</item>
 		</menu>
-		<menu icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" id="root-menu-721334" label="Toggles">
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Tint2 Panel Toggle">
+		<menu icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" id="root-menu-721334" label="Toggles">
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Tint2 Panel Toggle">
 				<action name="Execute">
 					<execute>toggle.tint2</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Hotcorners">
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Hotcorners">
 				<action name="Execute">
 					<execute>toggle.ld</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Theme Options">
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Theme Options">
 					<action name="Execute">
 						<execute>beardog-themer</execute>
 					</action>
 				</item>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Touchpad">
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Touchpad">
 				<action name="Execute">
 					<execute>toggle-touchpad</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Mouse Finder">
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Mouse Finder">
 				<action name="Execute">
 					<execute>toggle-mouse-pointer</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="Random BG">
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Random BG">
 				<action name="Execute">
 					<execute>toggle-wallpaper-random</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/object-flip-horizontal.png" label="X-Kill">
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="X-Kill">
 				<action name="Execute">
 					<execute>xkill</execute>
 				</action>
@@ -106,40 +106,35 @@
 		<separator/>
 		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/ld-icons/debian-logo.png" id="applications-menu" label="All Programs"/>
 		<separator/>
-		<menu icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-other.png" id="root-menu-4985" label="Utilities">
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/drive-multidisk.png" label="Gparted">
+		<menu icon="/usr/share/icons/gnome/24x24/categories/preferences-other.png" id="root-menu-4985" label="Utilities">
+			<item icon="/usr/share/icons/gnome/24x24/categories/applications-other.png" label="Gparted">
 				<action name="Execute">
 					<execute>gksudo gparted</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-system-network.png" label="Lx-Randr">
+			<item icon="/usr/share/icons/gnome/24x24/categories/preferences-system-network.png" label="Lx-Randr">
 				<action name="Execute">
 					<execute>lxrandr</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Adwaita/24x24/legacy/drive-multidisk.png" label="Live USB Maker">
+			<item icon="/usr/share/icons/gnome/24x24/categories/applications-other.png" label="Live USB Maker">
 				<action name="Execute">
 					<execute>x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix"</execute>
 				</action>
 			</item>
-						<item icon="/usr/share/icons/Adwaita/24x24/legacy/edit-cut.png" label="Kernel Remover">
+						<item icon="/usr/share/icons/gnome/24x24/categories/applications-development.png" label="Kernel Remover">
 				<action name="Execute">
 					<execute>kernel-remover</execute>
 				</action>
 			</item>
-		<item icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-other.png" label="Nvidia Installer">
+		<item icon="/usr/share/icons/gnome/24x24/categories/preferences-other.png" label="Printer Setup">
 				<action name="Execute">
-					<execute>x-terminal-emulator -T 'Nvidia Drivers Installer' -e bash -c "nvidia-ddmmx-installer"</execute>
-				</action>
-			</item>
-		<item icon="/usr/share/icons/Adwaita/24x24/legacy/applications-accessories.png" label="DkWM Installer">
-				<action name="Execute">
-					<execute>x-terminal-emulator -T 'dk Installer' -e bash -c "dk-installer"</execute>
+					<execute>x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1"</execute>
 				</action>
 			</item>
 		</menu>
-		<menu icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-system.png" id="root-menu-21510" label="Configuration">
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-desktop-theme.png" label="Settings Manager">
+		<menu icon="/usr/share/icons/gnome/24x24/categories/preferences-system.png" id="root-menu-21510" label="Configuration">
+				<item icon="/usr/share/icons/gnome/24x24/categories/preferences-desktop.png" label="Settings Manager">
 					<action name="Execute">
 						<execute>xfce4-settings-manager</execute>
 					</action>
@@ -149,17 +144,17 @@
 						<execute>obconf</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/applications-science.png" label="Tint2 Conf">
+				<item icon="/usr/share/icons/gnome/24x24/categories/applications-science.png" label="Tint2 Conf">
 					<action name="Execute">
 						<execute>tint2conf</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/tools-check-spelling.png" label="Dmenu Apps Conf">
+				<item icon="/usr/share/icons/gnome/24x24/categories/applications-accessories.png" label="Dmenu Apps Conf">
 					<action name="Execute">
 						<execute>geany ~/.config/dmenu/apps</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Adwaita/24x24/legacy/preferences-desktop.png" label="Ld-hotcorners Conf">
+				<item icon="/usr/share/icons/gnome/24x24/categories/preferences-desktop.png" label="Ld-hotcorners Conf">
 					<action name="Execute">
 						<execute>geany ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
 					</action>
