@@ -24,6 +24,7 @@ Development,^checkout(development),applications-development
 Icon Browser,       yad-icon-browser,                  preferences-system
 
 ^tag(utilities)
+Screenshot,         xfce4-screenshooter,              org.xfce.screenshooter
 Gparted,            gksudo gparted,                   gparted
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Color Chooser,      yad --color,                      org.xfce.settings.color
