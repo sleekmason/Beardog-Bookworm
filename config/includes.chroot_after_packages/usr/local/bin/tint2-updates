@@ -5,5 +5,5 @@ yad --title "Options" --escape-ok \
 --text="\n" --text-align=center \
 --window-icon=applications-utilities \
     --form \
-    --field="   Check For Updates!applications-other":FBTN "tint2-apt-update-check" \
-    --field="               Apt Update!system-software-update":FBTN "x-terminal-emulator -T 'Apt Update' -e 'sudo xupdate -i'" \
+    --field="   Check For Upgrades!applications-other":FBTN "tint2-apt-update-check" \
+    --field="            System Updater!system-software-update":FBTN "x-terminal-emulator -T 'Apt Update' -e 'sudo xupdate -i'" \
