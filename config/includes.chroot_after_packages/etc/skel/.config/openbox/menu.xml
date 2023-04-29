@@ -80,6 +80,11 @@
 						<execute>beardog-themer</execute>
 					</action>
 				</item>
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Tint2 Options">
+					<action name="Execute">
+						<execute>tint2-options</execute>
+					</action>
+				</item>
 			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Touchpad">
 				<action name="Execute">
 					<execute>toggle-touchpad</execute>
@@ -115,6 +120,11 @@
 			<item icon="/usr/share/icons/gnome/24x24/categories/preferences-system-network.png" label="Lx-Randr">
 				<action name="Execute">
 					<execute>lxrandr</execute>
+				</action>
+			</item>
+		<item icon="/usr/share/icons/gnome/24x24/categories/applications-other.png" label="Update Options">
+				<action name="Execute">
+					<execute>tint2-updates</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/24x24/categories/applications-other.png" label="Live USB Maker">

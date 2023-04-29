@@ -35,7 +35,7 @@ Bluetooth Setup,    x-terminal-emulator -T 'Bluetooth Installer' -e bash -c "blu
 zsh shell Setup,    x-terminal-emulator -T 'zsh Installer' -e bash -c "zsh-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Beardog Setup,      x-terminal-emulator -T "Beardog Setup" -e bash -c "sudo /usr/local/bin/xentry -i; read -srn1", applications-other
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
-Apt Update,         tint2-updates,                    system-software-update
+System Update,      tint2-updates,                    system-software-update
 
 ^tag(toggles)
 Picom,               toggle.picom,                                  preferences-system
