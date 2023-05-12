@@ -221,6 +221,7 @@ _reboot() {
         run_it
 }
 
+if grep -q "#GRUB_DISABLE_OS_PROBER=false" "/etc/default/grub"; then
 _update
 #_add_jgmenu
 #_add_notifications
@@ -234,6 +235,20 @@ _add_lightdm
 _osprober
 #_firmware
 _reboot
+else
+_update
+#_add_jgmenu
+#_add_notifications
+#_add_conky
+#_add_transparency
+#_add_installers
+_remove_packages
+_upgrade_kernel
+_add_backports
+_add_lightdm
+#_firmware
+_reboot
+fi
 
 [ "$_interactive" = "yes" ] &&
 read -r -n1 -p " Press any key to quit this dialog ... " answ
