@@ -44,9 +44,9 @@ Touchpad,            toggle-touchpad,                               preferences-
 Random BG,           toggle-wallpaper-random,                       preferences-system
 Jgmenu Icons,        jg-icon-changer,                               preferences-system
 Jgmenu Matcher,      jg-menu-theme,                                 preferences-system
+Transparency,        transparency-system,                           preferences-system
 Tint2 Options,       tint2-options,                                 preferences-system
 Tint2 Toggle,        toggle.tint2,                                  preferences-system
-Transparency,        transparency-system,                           preferences-system
 OSprober,            osprober-toggle,                               preferences-system
 Xkill,               xkill,                                         edit-delete
 

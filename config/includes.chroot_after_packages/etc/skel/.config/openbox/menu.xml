@@ -95,6 +95,11 @@
 					<execute>toggle-mouse-pointer</execute>
 				</action>
 			</item>
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Transparency">
+				<action name="Execute">
+					<execute>transparency-system</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Random BG">
 				<action name="Execute">
 					<execute>toggle-wallpaper-random</execute>
