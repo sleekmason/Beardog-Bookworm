@@ -28,6 +28,7 @@ Screenshot,         xfce4-screenshooter,              org.xfce.screenshooter
 Gparted,            gksudo gparted,                   gparted
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Color Chooser,      yad --color,                      org.xfce.settings.color
+DkWM Installer,     x-terminal-emulator -T "DkWM Installer" -e bash -c "dk-installer; read -srn1", applications-other
 Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Live USB Maker,     x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted

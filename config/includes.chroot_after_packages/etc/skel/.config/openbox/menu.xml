@@ -137,16 +137,21 @@
 					<execute>x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix"</execute>
 				</action>
 			</item>
-						<item icon="/usr/share/icons/gnome/24x24/categories/applications-development.png" label="Kernel Remover">
+			<item icon="/usr/share/icons/gnome/24x24/categories/applications-development.png" label="Kernel Remover">
 				<action name="Execute">
 					<execute>kernel-remover</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/gnome/24x24/categories/applications-other.png" label="DkWM Installer">
+				<action name="Execute">
+					<execute>x-terminal-emulator -T 'DkWM Installer' -e "dk-installer"</execute>
 				</action>
 			</item>
 		<item icon="/usr/share/icons/gnome/24x24/categories/preferences-other.png" label="Printer Setup">
 				<action name="Execute">
 					<execute>x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1"</execute>
 				</action>
-			</item>
+		</item>
 		</menu>
 		<menu icon="/usr/share/icons/gnome/24x24/categories/preferences-system.png" id="root-menu-21510" label="Configuration">
 				<item icon="/usr/share/icons/gnome/24x24/categories/preferences-desktop.png" label="Settings Manager">
