@@ -39,6 +39,7 @@ firmware-b43legacy-installer
 fuse3
 geany
 gettext-base
+gir1.2-gudev-1.0
 gnome-icon-theme
 gnome-themes-extra
 gnupg
