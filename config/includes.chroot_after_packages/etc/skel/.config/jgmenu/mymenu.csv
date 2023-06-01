@@ -43,6 +43,8 @@ Picom,               toggle.picom,                                  preferences-
 Sounds,              notification-sounds,                           preferences-system
 Touchpad,            toggle-touchpad,                               preferences-system
 Random BG,           toggle-wallpaper-random,                       preferences-system
+Brightness,          bright,                                        preferences-system
+Hotcorners,          toggle.ld,                                     preferences-system
 Jgmenu Icons,        jg-icon-changer,                               preferences-system
 Jgmenu Matcher,      jg-menu-theme,                                 preferences-system
 Transparency,        transparency-system,                           preferences-system
