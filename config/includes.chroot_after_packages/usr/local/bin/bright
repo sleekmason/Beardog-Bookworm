@@ -1,4 +1,8 @@
 #! /bin/bash
+# Script to set the hardware brightness using xrandr and blight.py.
+# A separate gamma toggle is also available.
+# Made by sleekmason 23.05.31
+
 
 # Set the icon here
 ICON="sunny"
