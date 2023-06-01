@@ -42,9 +42,9 @@ Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-i
 Picom,               toggle.picom,                                  preferences-system
 Sounds,              notification-sounds,                           preferences-system
 Touchpad,            toggle-touchpad,                               preferences-system
-Random BG,           toggle-wallpaper-random,                       preferences-system
 Brightness,          bright,                                        preferences-system
 Hotcorners,          toggle.ld,                                     preferences-system
+Random BG,           toggle-wallpaper-random,                       preferences-system
 Jgmenu Icons,        jg-icon-changer,                               preferences-system
 Jgmenu Matcher,      jg-menu-theme,                                 preferences-system
 Transparency,        transparency-system,                           preferences-system
