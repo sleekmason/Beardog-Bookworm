@@ -69,6 +69,7 @@ locales
 lsb-release
 lxpolkit
 lxterminal
+lxrandr
 manpages
 menu
 menu-xdg
@@ -97,6 +98,7 @@ powermgmt-base
 pnmixer
 pulseaudio-utils
 python3-distro
+python3-gi
 python3-notify2
 python3-pyxattr
 python3-pycurl
