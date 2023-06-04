@@ -80,7 +80,6 @@ yad --notification --no-markup  --text="Random Background Changer"   \
     --listen                       \
     --command="bash -c on_click" 2> /dev/null <&3 & NPID=$!
 
-
 # set notification right-click menu
 echo "menu:Folder & Icon Options! bash -c  'mousepad ~/.config/random-bg.conf'!$icondir/22x22/categories/applications-office.png|| \
 Off! bash -c 'on_kill'!$icondir/22x22/actions/process-stop.png|| \
