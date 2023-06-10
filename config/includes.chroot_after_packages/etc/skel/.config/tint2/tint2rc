@@ -174,7 +174,7 @@ time2_timezone =
 clock_font_color = #cadbeb 100
 clock_padding = 4 0
 clock_background_id = 0
-clock_tooltip = Left Click = Calendar - Right-Click = Timezone Changer
+clock_tooltip = Left ▸ Calendar ┃ Middle ▸ Multi Timer ┃ Right ▸ Time Zone Changer
 clock_tooltip_timezone = 
 clock_lclick_command = calendar
 clock_rclick_command = x-terminal-emulator -T 'Timezone Changer' -e "timezone-changer" && pkill -x tint2 ; tint2 &
@@ -209,7 +209,7 @@ ac_disconnected_cmd =
 button = new
 button_icon = /usr/share/icons/ld-icons/coltint2base/m.png
 button_text = 
-button_tooltip = Left Click = Menu - Right Click = Icon Menu
+button_tooltip = Left ▸ Menu ┃ Right ▸ Icon Menu
 button_lclick_command = jgmenu_run &
 button_rclick_command = icon-menu
 button_mclick_command = 
@@ -226,7 +226,7 @@ button_max_icon_size = 20
 button = new
 button_icon = /usr/share/icons/ld-icons/coltint2base/t2.png
 button_text = 
-button_tooltip = Tint2 Options - Middle Click = Tint2 Configuration
+button_tooltip = Left ▸ Tint2 Options ┃ Middle ▸ Tint2 Configuration
 button_lclick_command = popup -f /usr/share/lilidog/tint2/options &
 button_rclick_command = popup -f /usr/share/lilidog/tint2/options &
 button_mclick_command = tint2conf
