@@ -219,7 +219,7 @@ button_font_color = #000000 100
 button_padding = 4 0
 button_background_id = 0
 button_centered = 0
-button_max_icon_size = 20
+button_max_icon_size = 19
 
 #-------------------------------------
 # Button 2
@@ -236,7 +236,7 @@ button_font_color = #000000 100
 button_padding = 3 0
 button_background_id = 0
 button_centered = 0
-button_max_icon_size = 20
+button_max_icon_size = 19
 
 #-------------------------------------
 # Button 3
@@ -270,7 +270,7 @@ button_font_color = #000000 100
 button_padding = 3 0
 button_background_id = 0
 button_centered = 0
-button_max_icon_size = 20
+button_max_icon_size = 19
 
 #-------------------------------------
 # Tooltip
