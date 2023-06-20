@@ -229,8 +229,8 @@ _update
 #_add_transparency
 #_add_installers
 _remove_packages
-_upgrade_kernel
 _add_backports
+_upgrade_kernel
 _add_lightdm
 _osprober
 #_firmware
