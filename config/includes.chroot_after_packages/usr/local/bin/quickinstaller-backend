@@ -68,7 +68,7 @@ menu=(
 
 yad_opts=( --form
            --title="Quick Installers"
-           --text=" Installer dialog for some commonly used applications including any extra\n packages necessary for proper use.\n"
+           --text="  Installer dialog for some commonly used applications including\n  any extra packages necessary for proper use.\n"
            --image="system-software-install"
            --window-icon="system-software-install"
            --align=left
