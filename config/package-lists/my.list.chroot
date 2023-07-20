@@ -91,11 +91,9 @@ pavucontrol
 pciutils
 pcmciautils
 picom
-pipewire-alsa
-pipewire-pulse
+pipewire-audio
 powermgmt-base
 pnmixer
-pulseaudio-utils
 python3-distro
 python3-notify2
 python3-pyxattr
@@ -134,7 +132,6 @@ vdpau-driver-all
 wget
 wpasupplicant
 wireless-regdb
-wireplumber
 wmctrl
 x11-apps
 x11-common
