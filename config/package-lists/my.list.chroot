@@ -12,8 +12,6 @@ bind9-dnsutils
 btrfs-progs
 bzip2
 ca-certificates
-calamares
-calamares-settings-debian
 console-data
 console-setup
 cpio
