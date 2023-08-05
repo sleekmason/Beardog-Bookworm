@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Live Build Apps Installer
+GenericName=Install Live Build
+Exec=live-build-apps-installer
+StartupNotify=false
+Terminal=true
+Icon=applications-system
+Categories=System;
