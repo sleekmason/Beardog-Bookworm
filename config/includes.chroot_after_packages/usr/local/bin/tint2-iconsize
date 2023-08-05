@@ -32,7 +32,7 @@
         sed -i 's/^time1_font = .*/time1_font = Noto Sans Bold 8/g' "$FILE"
         sed -i 's/^task_font = .*/task_font = Noto Sans Display 10/g' "$FILE"
         sed -i 's/^taskbar_name_font = .*/taskbar_name_font = Noto Sans 8/g' "$FILE"
-        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 22/g' "$FILE"
+        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 24/g' "$FILE"
     fi
      killall -SIGUSR1 tint2
 }
@@ -65,7 +65,7 @@
         sed -i 's/^time1_font = .*/time1_font = Noto Sans Bold 8.5/g' "$FILE"
         sed -i 's/^task_font = .*/task_font = Noto Sans Display 11/g' "$FILE"
         sed -i 's/^taskbar_name_font = .*/taskbar_name_font = Noto Sans 9/g' "$FILE"
-        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 24/g' "$FILE"
+        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 26/g' "$FILE"
    fi
      killall -SIGUSR1 tint2
 }
@@ -98,7 +98,7 @@
         sed -i 's/^time1_font = .*/time1_font = Noto Sans Bold 10/g' "$FILE"
         sed -i 's/^task_font = .*/task_font = Noto Sans Display 12/g' "$FILE"
         sed -i 's/^taskbar_name_font = .*/taskbar_name_font = Noto Sans 10/g' "$FILE"
-        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 26/g' "$FILE"
+        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 28/g' "$FILE"
    fi
      killall -SIGUSR1 tint2
 }
@@ -150,7 +150,7 @@
         sed -i 's/^time1_font = .*/time1_font = Noto Sans 13/g' "$FILE"
         sed -i 's/^task_font = .*/task_font = Noto Sans Display 12/g' "$FILE"
         sed -i 's/^taskbar_name_font = .*/taskbar_name_font = Noto Sans 10/g' "$FILE"
-        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 30/g' "$FILE"
+        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 28/g' "$FILE"
    else
         sed -i 's/^button_max_icon_size =.*/button_max_icon_size = 26 100/g' "$FILE"
      sed -i 's/^systray_icon_size =.*/systray_icon_size = 26 100/g' "$FILE"
@@ -183,7 +183,7 @@
         sed -i 's/^time1_font = .*/time1_font = Noto Sans 14/g' "$FILE"
         sed -i 's/^task_font = .*/task_font = Noto Sans Display 13/g' "$FILE"
         sed -i 's/^taskbar_name_font = .*/taskbar_name_font = Noto Sans 11/g' "$FILE"
-        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 32/g' "$FILE"
+        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 28/g' "$FILE"
    else
         sed -i 's/^button_max_icon_size =.*/button_max_icon_size = 28 100/g' "$FILE"
      sed -i 's/^systray_icon_size =.*/systray_icon_size = 28 100/g' "$FILE"
@@ -216,7 +216,7 @@
         sed -i 's/^time1_font = .*/time1_font = Noto Sans 14/g' "$FILE"
         sed -i 's/^task_font = .*/task_font = Noto Sans Display 13/g' "$FILE"
         sed -i 's/^taskbar_name_font = .*/taskbar_name_font = Noto Sans 11/g' "$FILE"
-        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 34/g' "$FILE"
+        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 28/g' "$FILE"
    else
         sed -i 's/^button_max_icon_size =.*/button_max_icon_size = 30 100/g' "$FILE"
      sed -i 's/^systray_icon_size =.*/systray_icon_size = 30 100/g' "$FILE"
@@ -249,7 +249,7 @@
         sed -i 's/^time1_font = .*/time1_font = Noto Sans 15/g' "$FILE"
         sed -i 's/^task_font = .*/task_font = Noto Sans Display 14/g' "$FILE"
         sed -i 's/^taskbar_name_font = .*/taskbar_name_font = Noto Sans 12/g' "$FILE"
-        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 36/g' "$FILE"
+        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 28/g' "$FILE"
    else
         sed -i 's/^button_max_icon_size =.*/button_max_icon_size = 32 100/g' "$FILE"
      sed -i 's/^systray_icon_size =.*/systray_icon_size = 32 100/g' "$FILE"
@@ -282,7 +282,7 @@
         sed -i 's/^time1_font = .*/time1_font = Noto Sans 16/g' "$FILE"
         sed -i 's/^task_font = .*/task_font = Noto Sans Display 15/g' "$FILE"
         sed -i 's/^taskbar_name_font = .*/taskbar_name_font = Noto Sans 13/g' "$FILE"
-        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 38/g' "$FILE"
+        sed -i 's/^task_maximum_size =.*/task_maximum_size = 150 28/g' "$FILE"
    else
         sed -i 's/^button_max_icon_size =.*/button_max_icon_size = 34 100/g' "$FILE"
      sed -i 's/^systray_icon_size =.*/systray_icon_size = 34 100/g' "$FILE"
