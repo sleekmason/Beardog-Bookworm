@@ -225,7 +225,7 @@ sed -i '/Root Folders,^checkout(rootfiles),folder/a Mousepad,           mousepad
 sed -i '/bash\/zsh,            zsh-toggle,                                    preferences-system/d' "$FILE"
 sed -i '/OSprober.*/a bash\/zsh,            zsh-toggle,                                    preferences-system' "$FILE"
 sed -i '/Filezilla,    filezilla,                  filezilla/d' "$FILE"
-sed -i '/Printer/i Filezilla,    filezilla,                  filezilla' "$FILE"
+sed -i '/Gparted/i Filezilla,    filezilla,                  filezilla' "$FILE"
 sed -i '/Inkscape,               inkscape,                              org.xfce.settings.color/d' "$FILE"
 sed -i '/Root Folders,^checkout(rootfiles),folder/a Inkscape,               inkscape,                              org.xfce.settings.color' "$FILE"
 sed -i '/Gimp,               gimp,                              gimp/d' "$FILE"

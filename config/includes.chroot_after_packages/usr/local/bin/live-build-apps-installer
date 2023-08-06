@@ -45,7 +45,7 @@ sudo cp -f /tmp/live-build-changes-master/usr/lib/live/build/config /usr/lib/liv
 
 # Add line in jgmenu Utilities for filezilla
 sed -i '/Filezilla,    filezilla,                  filezilla/d' "$FILE"
-sed -i '/Printer/i Filezilla,    filezilla,                  filezilla' "$FILE"
+sed -i '/Gparted/i Filezilla,    filezilla,                  filezilla' "$FILE"
 
 echo ""
 echo "----------------------------------------"
