@@ -1,4 +1,5 @@
 alsa-oss
+alsa-ucm-conf
 alsa-utils
 amd64-microcode
 anacron
