@@ -35,6 +35,7 @@ feh
 file
 firmware-b43-installer
 firmware-b43legacy-installer
+fonts-font-awesome
 fuse3
 geany
 gettext-base
@@ -101,6 +102,7 @@ python3-six
 python3-xdg
 python3-xlib
 rename
+rofi
 rsync
 squashfs-tools
 suckless-tools

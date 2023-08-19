@@ -52,6 +52,7 @@ Jgmenu Matcher,      jg-menu-theme,                                 preferences-
 Transparency,        transparency-system,                           preferences-system
 Tint2 Options,       tint2-options,                                 preferences-system
 Tint2 Toggle,        toggle.tint2,                                  preferences-system
+Rofi Icons,          rofi-options,                                  preferences-system
 OSprober,            osprober-toggle,                               preferences-system
 Xkill,               xkill,                                         edit-delete
 
