@@ -252,7 +252,7 @@ fi
 
 [ "$_interactive" = "yes" ] &&
 read -r -n1 -p " Press any key to quit this dialog ... " answ
-sed -i '/welcome.sh &/d' /home/"${SUDO_USER}"/.config/openbox/autostart
+sed -i '/welcome-backend.sh &/d' /home/"${SUDO_USER}"/.config/openbox/autostart
 echo
 else
 echo ""

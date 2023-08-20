@@ -14,5 +14,5 @@
 
     If you would like to customize your setup by
     answering a few questions, press the 'Begin'
-    button below. Use 'sudo xentry -i' in order to
-    try out the customization script later.
+    button below. Type 'welcome' in a terminal to
+    use the customization script at a later date.
