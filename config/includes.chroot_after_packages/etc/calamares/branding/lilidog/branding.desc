@@ -21,8 +21,8 @@ strings:
     donateUrl:           https://www.forum.lilidog.org/
 
 images:
-    productLogo:         "lilidog-logo.png"
-    productIcon:         "lilidog-logo.png"
+    productLogo:         "lilidog-logo-forge.png"
+    productIcon:         "lilidog-logo-forge.png"
     productWelcome:      "welcome.png"
     # productWallpaper:  "wallpaper.png"
 
