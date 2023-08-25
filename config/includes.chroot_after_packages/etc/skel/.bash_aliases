@@ -1,1 +1,1 @@
-alias welcome="sudo /usr/local/bin/ld-entry -i"
+alias welcome="sudo /usr/local/bin/xentry -i"
