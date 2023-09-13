@@ -85,9 +85,9 @@
 						<execute>tint2-options</execute>
 					</action>
 				</item>
-			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Touchpad">
+			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Rofi Icons">
 				<action name="Execute">
-					<execute>toggle-touchpad</execute>
+					<execute>rofi-options</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/24x24/actions/object-flip-horizontal.png" label="Mouse Finder">
