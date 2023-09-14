@@ -108,6 +108,7 @@ squashfs-tools
 suckless-tools
 sudo
 ssft
+strace
 sxhkd
 syslinux-common
 systemd-timesyncd
