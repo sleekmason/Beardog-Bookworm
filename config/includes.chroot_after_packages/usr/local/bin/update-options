@@ -7,4 +7,5 @@ yad --title "Options" --escape-ok \
     --form \
     --field="   Check For Upgrades!applications-other":FBTN "tint2-apt-update-check" \
     --field="        System Updater!system-software-update":FBTN "x-terminal-emulator -T 'Apt Update' -e 'sudo xupdate -i'" \
-    --field="    BD Quick Installers!/usr/share/icons/gnome/22x22/apps/system-software-install.png":FBTN "bash -c 'quickinstaller'"
+    --field="    BD Quick Installers!/usr/share/icons/gnome/22x22/apps/system-software-install.png":FBTN "bash -c 'quickinstaller'" \
+    --field="   BD Utility Installers!/usr/share/icons/gnome/22x22/apps/system-software-install.png":FBTN "bash -c 'bd-utilities-main-installers'"
