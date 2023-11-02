@@ -2,6 +2,7 @@
 # xentry - originally xDaily from the Peppermint distro.
 # Adapted to lilidog use by sleekmason 11-21-2022
 if : >/dev/tcp/8.8.8.8/53; then
+
 PROGNAME="xentry"
 [ "$USER" != "root" ] && 
    echo -e "[0;31m\t$PROGNAME must be run as root, or with 'sudo $PROGNAME'[0m" && exit
@@ -128,15 +129,18 @@ _add_notifications() {
 _add_conky() {
       _msg="Install Conky with custom configurations?"
       do_it() { cd /tmp &&
-		  wget https://raw.githubusercontent.com/sleekmason/packages/master/conky.zip --show-progress -q &&
-		        unzip -q conky.zip &&
-		        cp -r /tmp/conky /home/"${SUDO_USER}"/.config &&
+		  wget https://raw.githubusercontent.com/sleekmason/packages/master/conky-bear-bookworm.zip --show-progress -q &&
+		        unzip -q conky-bear-bookworm.zip
+		        if test -f /home/"${SUDO_USER}"/.config/conky; then
+		        mv /home/"${SUDO_USER}"/.config/conky /home/"${SUDO_USER}"/.config/conky.bak &&
+		        cp -r /tmp/conky /home/"${SUDO_USER}"/.config
+                else                
+                cp -r /tmp/conky /home/"${SUDO_USER}"/.config              
+		        fi
 		        chown -R "${SUDO_USER}":"${SUDO_USER}" /home/"${SUDO_USER}"/.config/conky &&
-		        apt-get install -y conky-all fortunes fortune-mod
-		        if egrep -q "Conky" /usr/local/bin/beardog-themer; then
-                exit
-                else
-		        sed -i '/System/i    --field="                             Conky!conky-logomark-violet":FBTN ".config/conky/scripts/conky-chooser" \\' /usr/local/bin/beardog-themer ; fi }
+		        apt-get install -y conky-all fortunes fortune-mod &&
+                sed -i '/Conky,    conky-chooser,                  preferences-system/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+                sed -i '/Sounds/i Conky,    conky-chooser,                  preferences-system' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv ;}
         see_it
         no_see
         run_it
@@ -225,33 +229,32 @@ if grep -q "#GRUB_DISABLE_OS_PROBER=false" "/etc/default/grub"; then
 _update
 #_add_jgmenu
 #_add_notifications
-#_add_conky
 #_add_transparency
 #_add_installers
 _remove_packages
 _add_backports
 _upgrade_kernel
 _add_lightdm
+_add_conky
 _osprober
-#_firmware
+_firmware
 _reboot
 else
 _update
 #_add_jgmenu
 #_add_notifications
-#_add_conky
 #_add_transparency
 #_add_installers
 _remove_packages
 _add_backports
 _upgrade_kernel
 _add_lightdm
-#_firmware
+_add_conky
+_firmware
 _reboot
 fi
-
 [ "$_interactive" = "yes" ] &&
-read -r -n1 -p " Press any key to quit this dialog ... " answ
+echo $'\n\nPress any key to quit ...'; read -srn1
 sed -i '/welcome-backend.sh &/d' /home/"${SUDO_USER}"/.config/openbox/autostart
 echo
 else
@@ -262,4 +265,6 @@ echo ""
  echo ""
  echo "   [0;31m-----------------------------------------------------[0m"
 echo ""
+echo $'\n\nPress any key to quit ...'; read -srn1
 fi
+
