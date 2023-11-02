@@ -139,8 +139,8 @@ _add_conky() {
 		        fi
 		        chown -R "${SUDO_USER}":"${SUDO_USER}" /home/"${SUDO_USER}"/.config/conky &&
 		        apt-get install -y conky-all fortunes fortune-mod &&
-                sed -i '/Conky,    conky-chooser,                  preferences-system/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
-                sed -i '/Sounds/i Conky,    conky-chooser,                  preferences-system' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv ;}
+                sed -i '/Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-system/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+                sed -i '/Xkill/i Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-system' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv ;}
         see_it
         no_see
         run_it
