@@ -191,7 +191,7 @@ _add_backports() {
 }
 
 _upgrade_kernel() {
-      _msg="Install backports kernel? (Also adds repositories.)"
+      _msg="Install backports kernel? (also adds repositories)"
       do_it() { echo 'deb http://deb.debian.org/debian bookworm-backports main' | tee /etc/apt/sources.list.d/bookworm-backports.list &&
 		        apt-get update && apt-get install -y -t bookworm-backports linux-image-amd64 firmware-linux ;}
         see_it
@@ -218,7 +218,7 @@ _firmware() {
 }
 
 _reboot() {
-      _msg="Reboot? - After kernel or lightdm installation."
+      _msg="Update complete. Reboot? (if new kernel or lightdm installed)"
       do_it() { sed -i '/welcome.sh &/d' /home/"${SUDO_USER}"/.config/openbox/autostart && reboot ;}
         see_it
         no_see
