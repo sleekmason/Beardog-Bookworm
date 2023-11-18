@@ -1,4 +1,4 @@
-# Cheat sheet for Lilidog Openbox added keybinds.
+# Cheat sheet for Beardog Openbox added keybinds.
 # Note - "super" is the windows key.
 
 
@@ -17,8 +17,8 @@ Fontsize =         super + F6
 Gammy =            super + g    
 Hotcorners =       super + F8
 Jgmenu =           super + j
-Logout =           super + x
-Logout-alt =       super + shift + x
+Logout =           alt + x
+Logout-alt =       alt + shift + x
 Music =            super + m
 Screenshot =       alt + Print
 Terminal	   super + t

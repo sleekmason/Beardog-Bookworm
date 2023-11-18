@@ -55,10 +55,10 @@ mod4 + u
 
 # terminal
 mod4 + Return
-	xfce4-terminal
+	x-terminal-emulator
 
 mod4 + t
-    xfce4-terminal
+    x-terminal-emulator
     
 # File Manager	
 mod4 + f
@@ -81,15 +81,15 @@ mod4 + b
     firefox-esr
 
 # Logout
-mod4 + x
+alt + x
     ld-logout
 
 # Logout large alternate
-shift + mod4 + x
+shift + alt + x
     ~/.config/rofi/scripts/nakedquit
 
 # screenshot and selection capture
-alt + Print
+Print
 	xfce4-screenshooter
 
 # Splitview

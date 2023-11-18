@@ -30,7 +30,6 @@ Screenshot,         xfce4-screenshooter,              org.xfce.screenshooter
 Gparted,            gksudo gparted,                   gparted
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Color Chooser,      yad --color,                      org.xfce.settings.color
-DkWM Installer,     x-terminal-emulator -T "DkWM Installer" -e bash -c "dk-installer; read -srn1", applications-other
 Live Build Apps,    x-terminal-emulator -T "Live Build Apps Installer" -e bash -c "live-build-apps-installer", applications-other
 Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
@@ -46,7 +45,7 @@ Rofi Icons,          rofi-options,                                  preferences-
 Hotcorners,          toggle.ld,                                     preferences-system
 Random BG,           toggle-wallpaper-random,                       preferences-system
 Jgmenu Icons,        jg-icon-changer,                               preferences-system
-Jgmenu Matcher,      jg-menu-theme,                                 preferences-system
+Jgmenu Match,      jg-menu-theme,                                 preferences-system
 Transparency,        transparency-system,                           preferences-system
 Tint2 Options,       tint2-options,                                 preferences-system
 Tint2 Toggle,        toggle.tint2,                                  preferences-system

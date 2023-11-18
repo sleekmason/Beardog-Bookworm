@@ -1,20 +1,23 @@
 #!/bin/bash
 
 yad --title "Beardog Utility Installers" --escape-ok \
---button="gtk-ok:0" --form --center --geometry=220x332-200-360 --borders=6 \
+--button="gtk-ok:0" --form --center --geometry=220x382-200-360 --borders=10 \
 --text="\n Beardog Utility Installers \n" --text-align=center \
 --window-icon=applications-utilities \
     --form --columns=3 \
-    --field="              Dropbox!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "x-terminal-emulator -T 'Dropbox Installer' -e bash -c "dropbox-installer"" \
+    --field="               Dropbox!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "x-terminal-emulator -T 'Dropbox Installer' -e bash -c "dropbox-installer"" \
     --field="       Google Earth !/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "x-terminal-emulator -T 'Google Earth Installer' -e bash -c "google-earth-installer"" \
     --field="                 Hblock!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "x-terminal-emulator -T 'Hblock Installer' -e bash -c "hblock-installer"" \
     --field="                  Skype!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "x-terminal-emulator -T 'Skype Installer' -e bash -c "skype-installer"" \
     --field="                  Zoom!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "x-terminal-emulator -T 'Zoom Installer' -e bash -c "zoom-installer"" \
     --field="             Bluetooth!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Bluetooth Installer' -e bash -c "bluetooth-installer"" \
     --field="           Brightness!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Brightness Tray Icon Installer' -e bash -c "bright-gamma-installer"" \
+    --field="      Custom Conky!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Conky Installer' -e bash -c "conky-installer"" \
     --field="           Etcher USB!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Etcher USB Maker Installer' -e bash -c "etcher-installer"" \
     --field="     Jgmenu Default!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Jgmenu Default Installer' -e bash -c "jgmenu-default-installer"" \
+    --field="                Lightdm!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Lightdm Installer' -e bash -c "lightdm-installer"" \
     --field="      Live Build Apps!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Live Build Apps Installer' -e bash -c "live-build-apps-installer"" \
+    --field="       Penguins Eggs!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Penguin Eggs Installer' -e bash -c "penguins-eggs-installer"" \
     --field="         Tint2 Default!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Tint2 Default Installer' -e bash -c "tint2-default-installer"" \
     --field="             Virtualbox!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Oracle Virtualbox Installer' -e bash -c "virtualbox-installer"" \
     --field="              ZSH Shell!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'ZSH Shell Installer' -e bash -c "zsh-installer"" \
