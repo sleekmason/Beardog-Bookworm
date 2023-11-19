@@ -143,6 +143,7 @@ x11-utils
 x11-xkb-utils
 x11-xserver-utils
 xbitmaps
+xclip
 xdg-dbus-proxy
 xdg-desktop-portal-gtk
 xdg-user-dirs
