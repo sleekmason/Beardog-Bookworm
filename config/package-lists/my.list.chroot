@@ -105,6 +105,7 @@ python3-xlib
 rename
 rofi
 rsync
+scrot
 squashfs-tools
 suckless-tools
 sudo
