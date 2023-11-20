@@ -60,14 +60,6 @@ ctrl mod4 + p
 # Toggle tint2 panel on/off
 ctrl mod4 + t
     toggle.tint2
-    
-# Toggle to Glacier
-mod4 + y
-   "$HOME/.config/lilidog-themes/Glacier"
-
-# Toggle to Anolis
-mod4 + u
-   "$HOME/.config/lilidog-themes/Anolis"
 
 # terminal
 mod4 + Return
