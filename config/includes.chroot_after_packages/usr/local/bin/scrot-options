@@ -92,5 +92,5 @@ yad --title "Scrot" --escape-ok \
     --field="     Zero Delay!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "NOW & kill $YAD_PID"' \
     --field="      5 Seconds!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "LATER & kill $YAD_PID"' \
     --field="          Capture!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "CAPTURE & kill $YAD_PID"' \
-    --field="               Copy!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "COPY & kill $YAD_PID"'
+    --field="              Copy!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "COPY & kill $YAD_PID"'
 

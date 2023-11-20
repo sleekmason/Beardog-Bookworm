@@ -45,14 +45,6 @@ ctrl  + mod4 + p
 ctrl + mod4 + t
     toggle.tint2
 
-# Switch to light theme and back.
-mod4 + y
-   "light-dark-toggle"
-
-# Switch to custom theme and back.
-mod4 + u
-   "custom-theme-toggle"
-
 # terminal
 mod4 + Return
 	x-terminal-emulator

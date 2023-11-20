@@ -16,7 +16,7 @@ read -r -p "   [0;33mConky Installer[0m
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 cd /tmp || exit
-rm -f /tmp/conky*
+rm -R /tmp/conky*
 wget https://raw.githubusercontent.com/sleekmason/packages/master/conky-bear-bookworm2.zip --show-progress -q &&
 unzip -q /tmp/conky-bear-bookworm2.zip
 sudo apt-get install -y conky-all fortunes fortune-mod
