@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # Use scrot with different options and have yad close on click.
-# 5 second delay is default, with the ability to copy/paste.
 # Requires yad, xclip
 #
 
@@ -87,7 +86,7 @@ mkdir -p "${DIR}/${date}"
 # cd to directory and screenshot with time attached
 cd "${DIR}/${date}" || exit
 SCR="${DIR}/${date}/${date}-${time}.png"
-scrot -e 'xclip -selection clipboard -t image/png -i $f' -scapture 5 "$SCR"
+scrot -e 'xclip -selection clipboard -t image/png -i $f' -scapture "$SCR"
 notify-send --urgency low " Saved screenshot as ${SCR/*\/}"
 }
 
@@ -104,7 +103,7 @@ yad --title "Scrot" --escape-ok \
 --window-icon=applications-utilities \
     --form \
     --field="        No Delay!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "NOW & kill $YAD_PID"' \
-    --field="       5 Seconds!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "LATER & kill $YAD_PID"' \
+    --field="      5 Seconds!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "LATER & kill $YAD_PID"' \
     --field="        Selection!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "CAPTURE & kill $YAD_PID"' \
-    --field="        Copy Full!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "COPY & kill $YAD_PID"' \
+    --field="       Copy Full!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "COPY & kill $YAD_PID"' \
     --field="    Copy Select!/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png:FBTN" 'bash -c "COPYSEL & kill $YAD_PID"'
