@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=OSprober toggle
-Exec=osprober-toggle
+Name=Auto Login
+Exec=lightdm-autologin
 StartupNotify=false
 Terminal=false
-Icon=preferences-desktop-personal
+Icon=user_icon
 Categories=ld-misc-tools;

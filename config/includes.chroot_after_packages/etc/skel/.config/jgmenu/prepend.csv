@@ -2,19 +2,19 @@
 @icon,, 	11,11,16,16,2,,,,,/usr/share/icons/gnome/16x16/actions/system-search.png
 @search,,	35,6,125,26,2,left,top,auto,	#eeeeee 80,Type To Search
 ^sep()
-Terminal,           lxterminal,       utilities-terminal
-Thunar,             thunar,         org.xfce.filemanager
+Terminal,           lxterminal,       org.xfce.terminal
+Thunar,             thunar,           system-file-manager
 ^sep()
-Quick Grab,^checkout(quickgrab),applications-other
+Quick Grab,^checkout(quickgrab), org.xfce.settings.default-applications
 ^sep()
-Toggles,^checkout(toggles),/usr/share/icons/ld-icons/toggle.png
-Utilities,^checkout(utilities),applications-utilities
-Configuration,^checkout(configuration),preferences-system
+Toggles,^checkout(toggles), preferences-desktop-personal
+Utilities,^checkout(utilities), applications-utilities
+Configuration,^checkout(configuration), preferences-other
 ^sep()
-All Programs,^checkout(apps),debian-logo
+All Programs,^checkout(apps),preferences-system-search
 ^sep()
-Restart, openbox --restart; conkyrestart,        /usr/share/icons/ld-icons/pixmaps/logout_reboot.png
-Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.png
+Restart, openbox --restart; conkyrestart, org.xfce.settings.manager
+Exit,               ld-logout,                 application-exit
 
 ^tag(quickgrab)
 Recent Files,^pipe(jgmenu_run ob --cmd="pipe-recent-files",folder
@@ -23,7 +23,7 @@ Geany Editor,       geany,          geany
 Development,^checkout(development),applications-development
 
 ^tag(development)
-Icon Browser,       yad-icon-browser,                  preferences-system
+Icon Browser,       yad-icon-browser,              applications-science
 
 ^tag(utilities)
 Screenshot,         xfce4-screenshooter,              org.xfce.screenshooter
@@ -31,7 +31,7 @@ Gparted,            gksudo gparted,                   gparted
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Color Chooser,      yad --color,                      org.xfce.settings.color
 Live Build Apps,    x-terminal-emulator -T "Live Build Apps Installer" -e bash -c "live-build-apps-installer", applications-other
-Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
+Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     applications-accessories
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Live USB Maker,     x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
 Update Options,     update-options,                   system-software-update
@@ -39,17 +39,17 @@ Welcome Setup,      x-terminal-emulator -T "Welcome Setup" -e bash -c "sudo /usr
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
 
 ^tag(toggles)
-Picom,               toggle.picom,                                  preferences-system
-Sounds,              notification-sounds,                           preferences-system
-Rofi Icons,          rofi-options,                                  preferences-system
-Hotcorners,          toggle.ld,                                     preferences-system
-Random BG,           toggle-wallpaper-random,                       preferences-system
-Jgmenu Icons,        jg-icon-changer,                               preferences-system
-Jgmenu Match,        jg-menu-theme,                                 preferences-system
-Transparency,        transparency-system,                           preferences-system
-Tint2 Options,       tint2-options,                                 preferences-system
-Tint2 Toggle,        toggle.tint2,                                  preferences-system
-OSprober,            osprober-toggle,                               preferences-system
+Picom,               toggle.picom,                                  preferences-desktop-personal
+Sounds,              notification-sounds,                           preferences-desktop-personal
+Rofi Icons,          rofi-options,                                  preferences-desktop-personal
+Hotcorners,          toggle.ld,                                     preferences-desktop-personal
+Random BG,           toggle-wallpaper-random,                       preferences-desktop-personal
+Jgmenu Icons,        jg-icon-changer,                               preferences-desktop-personal
+Jgmenu Match,        jg-menu-theme,                                 preferences-desktop-personal
+Transparency,        transparency-system,                           preferences-desktop-personal
+Tint2 Options,       tint2-options,                                 preferences-desktop-personal
+Tint2 Toggle,        toggle.tint2,                                  preferences-desktop-personal
+OSprober,            osprober-toggle,                               preferences-desktop-personal
 Xkill,               xkill,                                         edit-delete
 
 ^tag(rootfiles)
@@ -61,11 +61,11 @@ Xkill,               xkill,                                         edit-delete
 
 ^tag(configuration)
 Openbox,             obconf,                                                               obconf
-System Settings,     xfce4-settings-manager,                                               preferences-system
-Power Manager,       xfce4-power-manager-settings,                                         applications-system
+System Settings,     xfce4-settings-manager,                                               org.xfce.settings.manager
+Power Manager,       xfce4-power-manager-settings,                                         org.xfce.powermanager
 Tint2 Settings,      tint2conf,                                                            tint2
 Keybinds,            geany ~/.config/openbox/sxhkdrc-open,                                 document-properties
 Jgmenu,              geany ~/.config/jgmenu/README & thunar ~/.config/jgmenu,              document-properties
 Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
-Grub Background,     x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme
+Grub Background,     x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-wallpaper
 ^tag(apps)
