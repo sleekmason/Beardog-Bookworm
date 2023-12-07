@@ -8,7 +8,7 @@ WIDTH=240
 HEIGHT=400
 
 trans="$(yad --title "Rofi Font Size" --width="$WIDTH" --height="$HEIGHT" --borders="8" --center --list \
---text="Rofi font size changer.\nFonts default to Noto Sans.\n" --text-align=center \
+--text="Rofi font size changer.\nFonts reset to system default.\n" --text-align=center \
 --window-icon=applications-system \
 --radiolist  --column "Choose" --column "Size" --separator=" " \
   FALSE "8" \
@@ -160,7 +160,7 @@ yad --title "Rofi Icon & Font Options" --escape-ok \
     --button="Install Icons"!/usr/share/icons/gnome/22x22/categories/applications-graphics.png!:"popup -f /usr/share/lilidog/installers/icons &" \
     --button=" Font Size"!/usr/share/icons/gnome/22x22/apps/preferences-desktop-font.png!:'bash -c "FONTSIZE"' \
     --button=" Exit!application-exit:0" \
-    --text " Gnome and Obsidian icons are already installed. \n Press the 'Install Icons' button for other options. \n This dialog will change rofi options only.\n" \
+    --text " Gnome icons are already installed. \n Press the 'Install Icons' button for other options. \n This dialog will change rofi options only.\n" \
     --text-align=center --buttons-layout=edge \
     --form --center --geometry=210x290-314-440 --borders=10 \
     --window-icon=preferences-other \
