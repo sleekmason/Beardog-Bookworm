@@ -82,7 +82,7 @@ shift + alt + x
 
 # screenshot and selection capture
 Print
-	xfce4-screenshooter
+	scrot-options
 
 # screenshot and selection capture 2
 alt + Print
