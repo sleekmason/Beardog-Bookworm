@@ -6,8 +6,6 @@ yad --title "Icons" --escape-ok \
 --window-icon=applications-graphics \
     --form \
     --field="         Install Buuf Icons!/usr/share/icons/gnome/22x22/categories/applications-graphics.png":FBTN "x-terminal-emulator -T 'Buuf Icons Installer' -e bash -c "buuf-icon-installer"" \
-    --field="     Install Breeze Icons!/usr/share/icons/gnome/22x22/categories/applications-graphics.png":FBTN "x-terminal-emulator -T 'Breeze Icons Installer' -e bash -c "breeze-installer"" \
-    --field="       Install Circle Icons!/usr/share/icons/gnome/22x22/categories/applications-graphics.png":FBTN "x-terminal-emulator -T 'Circle Icons Installer' -e bash -c "circle-icon-installer"" \
     --field="     Install Faenza Icons!/usr/share/icons/gnome/22x22/categories/applications-graphics.png":FBTN "x-terminal-emulator -T 'Faenza Icons Installer' -e bash -c "faenza-installer"" \
     --field="    Install Gnome Icons!/usr/share/icons/gnome/22x22/categories/applications-graphics.png":FBTN "x-terminal-emulator -T 'Gnome Icons Installer' -e bash -c "gnome-colors-installer"" \
     --field="     Install Numix Icons!/usr/share/icons/gnome/22x22/categories/applications-graphics.png":FBTN "x-terminal-emulator -T 'Numix Icons Installer' -e bash -c "numix-installer"" \
