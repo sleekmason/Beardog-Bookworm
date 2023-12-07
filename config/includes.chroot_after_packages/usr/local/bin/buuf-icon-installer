@@ -22,7 +22,8 @@ rm -f buuf-icons_12.0-1_all.deb
 if [ ! -e "buuf-icons_12.0-1_all.deb" ]; then
 wget https://raw.githubusercontent.com/sleekmason/packages/master/buuf-icons_12.0-1_all.deb --show-progress -q
 fi 
-sudo apt install ./buuf-icons_12.0-1_all.deb
+sudo apt install -y ./buuf-icons_12.0-1_all.deb
+sudo update-icon-caches /usr/share/icons/buuf*
 echo ""
 echo "[0;33m----------------------------------------------------------------------"
 echo ""
