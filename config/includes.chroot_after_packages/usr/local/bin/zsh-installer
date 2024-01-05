@@ -12,7 +12,7 @@ read -p "   [0;33mzsh shell installer[0m
    to change between zsh and bash.  A logout is required to complete.
    
    Any existing ~/.zshrc will be backed up to ~/.zshrc.bak and the 
-   default Beardog version will be placed in ~/.zshrc 
+   default Lilidog version will be placed in ~/.zshrc 
    
    [0;33m----------------------------------------------------------
    
@@ -38,9 +38,9 @@ echo ""
 echo ""
 sudo apt update && sudo apt install zsh &&
 sudo chsh -s /bin/zsh $USER &&
-sed -i '/bash\/zsh,            zsh-toggle,                                    preferences-system/d' ~/.config/jgmenu/prepend.csv &&
-sed -i '/OSprober.*/a bash\/zsh,            zsh-toggle,                                    preferences-system' ~/.config/jgmenu/prepend.csv
-killall jgmenu
+sed -i '/bash\/zsh,            zsh-toggle,                                    preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv &&
+sed -i '/OSprober.*/a bash\/zsh,            zsh-toggle,                                    preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
+killall -q jgmenu
 else
 cp /usr/share/lilidog/extras/zsh/.zshrc $HOME/.zshrc &
 sudo apt update && sudo apt install zsh &&
@@ -51,8 +51,8 @@ echo "   [0;32mAdding custom ~/.zshrc to match Lilidog defaults and
 echo ""
 echo ""
 sudo chsh -s /bin/zsh $USER &&
-sed -i '/bash\/zsh,            zsh-toggle,                                    preferences-system/d' ~/.config/jgmenu/prepend.csv &&
-sed -i '/OSprober.*/a bash\/zsh,            zsh-toggle,                                    preferences-system' ~/.config/jgmenu/prepend.csv
+sed -i '/bash\/zsh,            zsh-toggle,                                    preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv &&
+sed -i '/OSprober.*/a bash\/zsh,            zsh-toggle,                                    preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
 killall jgmenu
 fi
 echo ""
@@ -76,7 +76,6 @@ echo ""
  echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
  echo ""
  echo "   [0;31m-----------------------------------------------------[0m"
-echo ""
 echo ""
 fi
 read -n1 -p " Press any key to quit this dialog ... "
