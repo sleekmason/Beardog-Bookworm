@@ -223,7 +223,11 @@ _firmware() {
 
 _reboot() {
       _msg="Reboot? - After kernel or lightdm installation."
-      do_it() { sed -i '/welcome-backend.sh.*/d' /home/"${SUDO_USER}"/.config/openbox/autostart && reboot ;}
+      do_it() { sed -i '/welcome-backend.sh.*/d' /home/"${SUDO_USER}"/.config/openbox/autostart
+		  if ! grep hypervisor /proc/cpuinfo ; then
+          sed -i '/vmrestore.*/d' /home/"${SUDO_USER}"/.config/openbox/autostart
+          fi
+          reboot ;}
         see_it
         no_see
         run_it
@@ -259,6 +263,9 @@ _reboot
 fi
 [ "$_interactive" = "yes" ]
 sed -i '/welcome-backend.sh.*/d' /home/"${SUDO_USER}"/.config/openbox/autostart
+if ! grep hypervisor /proc/cpuinfo ; then
+sed -i '/vmrestore.*/d' /home/"${SUDO_USER}"/.config/openbox/autostart
+fi
 echo
 echo
 echo $'\n\nPress any key to quit ...'; read -srn1

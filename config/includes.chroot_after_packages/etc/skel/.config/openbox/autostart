@@ -52,5 +52,4 @@ sxhkd -c "$HOME/.config/openbox/sxhkdrc-open" &
 # sleep 2 && bright-gamma &
 
 vmrestore &
-
 welcome-backend.sh &
