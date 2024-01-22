@@ -223,7 +223,7 @@ _firmware() {
 
 _reboot() {
       _msg="Reboot? - After kernel or lightdm installation."
-      do_it() { sed -i '/welcome.sh &/d' /home/"${SUDO_USER}"/.config/openbox/autostart && reboot ;}
+      do_it() { sed -i '/welcome-backend.sh.*/d' /home/"${SUDO_USER}"/.config/openbox/autostart && reboot ;}
         see_it
         no_see
         run_it
@@ -257,9 +257,11 @@ _add_conky
 _firmware
 _reboot
 fi
-[ "$_interactive" = "yes" ] &&
+[ "$_interactive" = "yes" ]
+sed -i '/welcome-backend.sh.*/d' /home/"${SUDO_USER}"/.config/openbox/autostart
+echo
+echo
 echo $'\n\nPress any key to quit ...'; read -srn1
-sed -i '/welcome-backend.sh &/d' /home/"${SUDO_USER}"/.config/openbox/autostart
 echo
 else
 echo ""
