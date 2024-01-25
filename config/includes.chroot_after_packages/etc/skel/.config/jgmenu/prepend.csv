@@ -3,7 +3,7 @@
 @search,,	35,6,125,26,2,left,top,auto,	#eeeeee 80,Type To Search
 ^sep()
 Terminal,           lxterminal,       org.xfce.terminalemulator
-Thunar,             thunar,           system-file-manager
+Thunar,             thunar,            system-file-manager
 ^sep()
 Quick Grab,^checkout(quickgrab), org.xfce.settings.default-applications
 ^sep()

@@ -133,8 +133,8 @@ _add_notifications() {
 _add_conky() {
       _msg="Install Conky with custom configurations?"
       do_it() { cd /tmp &&
-		  wget https://raw.githubusercontent.com/sleekmason/packages/master/conky-bear-bookworm.zip --show-progress -q &&
-		        unzip -q conky-bear-bookworm.zip
+		  wget https://raw.githubusercontent.com/sleekmason/packages/master/conky-bear-bookworm2.zip --show-progress -q &&
+		        unzip -q conky-bear-bookworm2.zip
 		        if test -f /home/"${SUDO_USER}"/.config/conky; then
 		        mv /home/"${SUDO_USER}"/.config/conky /home/"${SUDO_USER}"/.config/conky.bak &&
 		        cp -r /tmp/conky /home/"${SUDO_USER}"/.config
