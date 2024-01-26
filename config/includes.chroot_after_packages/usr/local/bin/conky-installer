@@ -27,8 +27,8 @@ else
 	cp -r /tmp/conky ~/.config              
 fi
 echo ""
-sed -i '/Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-system/d' ~/.config/jgmenu/prepend.csv
-                sed -i '/Xkill/i Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-system' ~/.config/jgmenu/prepend.csv
+sed -i '/Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv
+                sed -i '/Xkill/i Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
 echo ""
 echo "[0;32m----------------------------------------------------------------------[0m"
 echo ""
