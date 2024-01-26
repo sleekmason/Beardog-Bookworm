@@ -79,7 +79,8 @@ _update() {
 _add_lightdm() {
       _msg="Add the lightdm login manager?"
       do_it() { apt-get update && apt-get install -y lightdm lightdm-gtk-greeter-settings &&
-		        cp /usr/share/lilidog/extras/lightdm/lightdm-gtk-greeter.conf /etc/lightdm ;}
+		        cp /usr/share/lilidog/extras/lightdm/lightdm-gtk-greeter.conf /etc/lightdm
+		        sed -i 's/^exec startx/#exec startx/g' /home/"${SUDO_USER}"/.profile ;}
       
         see_it
         no_see
@@ -133,8 +134,8 @@ _add_notifications() {
 _add_conky() {
       _msg="Install Conky with custom configurations?"
       do_it() { cd /tmp &&
-		  wget https://raw.githubusercontent.com/sleekmason/packages/master/conky-bear-bookworm2.zip --show-progress -q &&
-		        unzip -q conky-bear-bookworm2.zip
+		  wget https://raw.githubusercontent.com/sleekmason/packages/master/conky-bear-bookworm.zip --show-progress -q &&
+		        unzip -q conky-bear-bookworm.zip
 		        if test -f /home/"${SUDO_USER}"/.config/conky; then
 		        mv /home/"${SUDO_USER}"/.config/conky /home/"${SUDO_USER}"/.config/conky.bak &&
 		        cp -r /tmp/conky /home/"${SUDO_USER}"/.config
@@ -143,8 +144,8 @@ _add_conky() {
 		        fi
 		        chown -R "${SUDO_USER}":"${SUDO_USER}" /home/"${SUDO_USER}"/.config/conky &&
 		        apt-get install -y conky-all fortunes fortune-mod &&
-                sed -i '/Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-desktop-personal/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
-                sed -i '/Xkill/i Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-desktop-personal' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv ;}
+                sed -i '/Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-system/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+                sed -i '/Xkill/i Conky,               ~\/.config\/conky\/scripts\/conky-chooser,         preferences-system' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv ;}
         see_it
         no_see
         run_it
