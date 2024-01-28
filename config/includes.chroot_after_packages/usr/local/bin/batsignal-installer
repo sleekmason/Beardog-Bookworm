@@ -28,7 +28,7 @@ wget https://raw.githubusercontent.com/sleekmason/packages/master/batsignal_2024
 sudo apt update && sudo apt install -y /tmp/./batsignal_20240124-1_amd64.deb &&
 
 mkdir -p ~/.config/systemd/user/batsignal.service.d &&
-printf '[Service]\nExecStart=\nExecStart=batsignal -c 10 -w 20 -f 97' > ~/.config/systemd/user/batsignal.service.d/options.conf &&
+printf '[Service]\nExecStart=\nExecStart=batsignal -m 30 -c 10 -w 20 -f 98' > ~/.config/systemd/user/batsignal.service.d/options.conf &&
 
 sleep 1
 sudo systemctl daemon-reload &&
