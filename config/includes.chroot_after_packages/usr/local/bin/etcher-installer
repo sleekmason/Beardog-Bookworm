@@ -17,14 +17,15 @@ read -p "   [0;33mEtcher Installer[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
-cd /tmp || exit &&
+cd /tmp || exit
+rm -fR /tmp/balena-etcher*
 wget https://raw.githubusercontent.com/sleekmason/packages/master/balena-etcher_1.18.8_amd64.deb --show-progress -q
 echo ""
 sudo apt update && sudo apt install -y /tmp/./balena-etcher*
-rm /tmp/balena-etcher*
+
 
 grep -v "Etcher,             /opt/balenaEtcher/balena-etcher,  balena-etcher" ~/.config/jgmenu/prepend.csv > tmpfile && mv tmpfile ~/.config/jgmenu/prepend.csv &&
-sed -i '/Install Extras/i Etcher,             \/\opt\/\balenaEtcher\/\balena-etcher,  balena-etcher' ~/.config/jgmenu/prepend.csv
+sed -i '/Gparted/i Etcher,             \/\opt\/\balenaEtcher\/\balena-etcher,  balena-etcher' ~/.config/jgmenu/prepend.csv
 killall -q jgmenu
 echo ""
 echo "-----------------------------------------------------"
