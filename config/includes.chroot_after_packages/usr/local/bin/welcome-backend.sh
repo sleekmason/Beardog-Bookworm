@@ -10,7 +10,7 @@ xdg-mime default thunar.desktop inode/directory &&
 --button=" Begin"!/usr/share/icons/gnome/22x22/places/debian-swirl.png!:"x-terminal-emulator -T 'Customization' -e 'sudo xentry -i'" \
 --button=" Exit!application-exit:0" \
 --text-info --justify=left --wrap < /usr/share/lilidog/welcome.txt --fontname="Sans 11" \
---fore="#E6E6E3"; sed -i '/welcome-backend.sh &/d' ~/.config/openbox/autostart; if ! grep hypervisor /proc/cpuinfo ; sed -i '/vmrestore.*/d' ~/.config/openbox/autostart; fi; exit
+--fore="#E6E6E3"; sed -i '/welcome-backend.sh &/d' ~/.config/openbox/autostart; if ! grep hypervisor /proc/cpuinfo ; then sed -i '/vmrestore.*/d' ~/.config/openbox/autostart; fi; exit
 else
   yad --notification --image=/usr/share/icons/ld-icons/install.png --text "Install Beardog ┃ User password ▸ 'user' ┃ Root password ▸ 'live'" --command "gksudo calamares" &
   yad --title "Welcome!" --window-icon=/usr/share/icons/ld-icons/paw-color.png \
