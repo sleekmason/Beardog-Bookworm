@@ -60,6 +60,7 @@ libavcodec-extra
 libexo-2-0
 libfile-mimeinfo-perl
 libfm-modules
+libglib2.0-bin
 libinput-tools
 liblockfile-bin
 libnotify-bin
