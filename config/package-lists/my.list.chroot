@@ -22,6 +22,7 @@ cryptsetup-initramfs
 curl
 dbus-user-session
 dbus-x11
+dconf-gsettings-backend
 desktop-base
 dialog
 dosfstools
@@ -38,6 +39,7 @@ firmware-b43-installer
 firmware-b43legacy-installer
 fonts-font-awesome
 fuse3
+gconf-gsettings-backend
 geany
 gettext-base
 gnome-icon-theme
