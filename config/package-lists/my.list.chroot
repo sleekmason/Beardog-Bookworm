@@ -93,6 +93,7 @@ obsidian-icon-theme
 openbox
 os-prober
 oss-compat
+p7zip-full
 pavucontrol
 pciutils
 pcmciautils
@@ -148,6 +149,7 @@ x11-session-utils
 x11-utils
 x11-xkb-utils
 x11-xserver-utils
+xarchiver
 xbitmaps
 xclip
 xdg-dbus-proxy
