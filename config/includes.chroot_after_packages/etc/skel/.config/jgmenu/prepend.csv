@@ -44,6 +44,7 @@ Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-i
 Picom,               toggle.picom,                                  preferences-desktop-personal
 Sounds,              notification-sounds,                           preferences-desktop-personal
 Rofi Icons,          rofi-options,                                  preferences-desktop-personal
+Font Sizes,          fontsize-changer,                              preferences-desktop-personal
 Hotcorners,          toggle.ld,                                     preferences-desktop-personal
 Random BG,           toggle-wallpaper-random,                       preferences-desktop-personal
 Jgmenu Icons,        jg-icon-changer,                               preferences-desktop-personal
