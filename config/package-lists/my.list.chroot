@@ -71,7 +71,6 @@ librsvg2-common
 locales
 lsb-release
 lxpolkit
-lxterminal
 lxrandr
 manpages
 menu
@@ -159,6 +158,7 @@ xdg-utils
 xdotool
 xfce4-power-manager
 xfce4-settings
+xfce4-terminal
 xinput
 xml-core
 xmlstarlet

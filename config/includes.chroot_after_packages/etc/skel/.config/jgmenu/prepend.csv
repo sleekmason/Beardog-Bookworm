@@ -2,7 +2,7 @@
 @icon,, 	11,11,16,16,2,,,,,/usr/share/icons/gnome/16x16/actions/system-search.png
 @search,,	35,6,125,26,2,left,top,auto,	#eeeeee 80,Type To Search
 ^sep()
-Terminal,           lxterminal,       org.xfce.terminalemulator
+Terminal,           x-terminal-emulator,       org.xfce.terminalemulator
 Thunar,             thunar,            system-file-manager
 ^sep()
 Quick Grab,^checkout(quickgrab), org.xfce.settings.default-applications
