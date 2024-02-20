@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yad --title "Beardog Utility Installers" --escape-ok \
---button="gtk-ok:0" --form --center --geometry=220x420-300-360 --borders=10 \
+--button="gtk-ok:0" --form --center --geometry=220x500-300-360 --borders=10 \
 --text="\n Beardog Utility Installers \n" --text-align=center \
 --window-icon=applications-utilities \
     --form --columns=3 \
@@ -11,6 +11,8 @@ yad --title "Beardog Utility Installers" --escape-ok \
     --field="               Maestral!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "x-terminal-emulator -T 'Maestral Installer' -e bash -c "maestral-installer"" \
     --field="                   Skype!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "x-terminal-emulator -T 'Skype Installer' -e bash -c "skype-installer"" \
     --field="                   Zoom!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "x-terminal-emulator -T 'Zoom Installer' -e bash -c "zoom-installer"" \
+    --field="            Joplin Note!/usr/share/icons/gnome/22x22/categories//applications-office.png":FBTN "x-terminal-emulator -T ' Joplin Note' -e bash -c "joplin-installer"" \
+    --field="   VSCodium Editor!/usr/share/icons/gnome/22x22/categories/applications-office.png":FBTN "x-terminal-emulator -T 'VSCodium Installer' -e bash -c "vscodium-installer"" \
     --field="              Batsignal!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Batsignal Installer' -e bash -c "batsignal-installer"" \
     --field="             Bluetooth!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Bluetooth Installer' -e bash -c "bluetooth-installer"" \
     --field="           Brightness!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Brightness Tray Icon Installer' -e bash -c "bright-gamma-installer"" \
@@ -21,8 +23,13 @@ yad --title "Beardog Utility Installers" --escape-ok \
     --field="                Lightdm!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Lightdm Installer' -e bash -c "lightdm-installer"" \
     --field="      Live Build Apps!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Live Build Apps Installer' -e bash -c "live-build-apps-installer"" \
     --field="       Penguins Eggs!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Penguin Eggs Installer' -e bash -c "penguins-eggs-installer"" \
+    --field="            Shortwave!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Shortwave Installer' -e bash -c "shortwave-installer"" \
     --field="         Tint2 Default!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Tint2 Default Installer' -e bash -c "tint2-default-installer"" \
     --field="             Virtualbox!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'Oracle Virtualbox Installer' -e bash -c "virtualbox-installer"" \
     --field="              ZSH Shell!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "x-terminal-emulator -T 'ZSH Shell Installer' -e bash -c "zsh-installer"" \
-    --field="   Backports Kernel!/usr/share/icons/gnome/22x22/categories/applications-system.png":FBTN "x-terminal-emulator -T 'Backports Kernel Installer' -e bash -c "backports-kernel-installer"" \
-    --field="                  DKWM!/usr/share/icons/gnome/22x22/categories/applications-system.png":FBTN "x-terminal-emulator -T 'DKWM Installer' -e bash -c "dk-installer""
+    --field="   Backports Kernel!/usr/share/icons/gnome/22x22/categories/applications-engineering.png":FBTN "x-terminal-emulator -T 'Backports Kernel Installer' -e bash -c "backports-kernel-installer"" \
+    --field="      Liquorix Kernel!/usr/share/icons/gnome/22x22/categories/applications-engineering.png":FBTN "x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer"" \
+    --field="     Xanmod Kernel!/usr/share/icons/gnome/22x22/categories/applications-engineering.png":FBTN "x-terminal-emulator -T 'Xanmod Kernel Installer' -e bash -c "xanmod-kernel-installer"" \
+    --field="                 DKWM!/usr/share/icons/gnome/22x22/categories/applications-system.png":FBTN "x-terminal-emulator -T 'DKWM Installer' -e bash -c "dk-installer"" \
+    --field="                Polybar!/usr/share/icons/gnome/22x22/categories/applications-system.png":FBTN "x-terminal-emulator -T 'Polybar Installer' -e bash -c "polybar-installer""
+
