@@ -24,8 +24,10 @@ sed -i '/Tint2 Toggle/a Auto Login,          lightdm-autologin,                 
 sed -i 's/^exec startx/#exec startx/g' "$HOME/.profile"
 
 ## Comment the line for lightdm use
-if grep -Fxq 'exec "$session"' "$HOME/.xsessionrc"; then
-sed -i 's/exec "$session"/#exec "$session"/' "$HOME/.xsessionrc"
+if [[ $(command -v lightdm) ]]; then
+  if grep -Fxq 'exec "$session"' "$HOME/.xsessionrc"; then
+     sed -i 's/^exec "$session"/#exec "$session"/' "$HOME/.xsessionrc"
+  fi
 fi
 echo ""
 echo "[0;32m----------------------------------------------------------------------[0m"
