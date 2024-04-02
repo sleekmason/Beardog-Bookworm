@@ -169,6 +169,11 @@
 						<execute>tint2conf</execute>
 					</action>
 				</item>
+			    <item icon="/usr/share/icons/gnome/24x24/actions/document-properties.png" label="Picom Conf">
+					<action name="Execute">
+						<execute>geany ~/.config/picom.conf</execute>
+					</action>
+				</item>
 				<item icon="/usr/share/icons/gnome/24x24/categories/applications-accessories.png" label="Dmenu Apps Conf">
 					<action name="Execute">
 						<execute>geany ~/.config/dmenu/apps</execute>
@@ -185,7 +190,7 @@
 			<action name="Restart"/>
 		</item>
 		<separator/>
-		<item icon="/usr/share/icons/ld-icons/exit4.png" label="Exit">
+		<item icon="/usr/share/icons/gnome/24x24/actions/application-exit.png" label="Exit">
 			<action name="Execute">
 				<execute>ld-logout</execute>
 			</action>
