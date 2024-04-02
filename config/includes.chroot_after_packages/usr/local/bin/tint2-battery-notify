@@ -132,16 +132,16 @@ yad --title "Extra Notifications" --button=gtk-ok:0 --form --center --width=300 
 --height=380 --text="\nExtra Battery Notifications\n" --text-align=center \
 --window-icon=utilities-system-monitor \
     --form \
-    --field="                  Percentage On/Off!battery-full-charging":FBTN "bash -c 'tint2-panel-battery-options'" \
+    --field="                Percentage On/Off!battery-full-charging":FBTN "bash -c 'tint2-panel-battery-options'" \
     --field="          Percentage Threshhold!emblem-system":FBTN "bash -c 'tint2-panel-battery-level'" \
-    --field="            Percentage Text Color!org.xfce.settings.color":FBTN "bash -c 'tint2-battery-textcolor'" \
+    --field="           Percentage Text Color!org.xfce.settings.color":FBTN "bash -c 'tint2-battery-textcolor'" \
     --field="":LBL "" \
     --field="":LBL "" \
     --field="         Low Notification On/Off!battery-full-charging":FBTN "bash -c 'tint2-battery-options'" \
     --field="         Notification Threshhold!emblem-system":FBTN "bash -c 'tint2-low-battery-level '" \
     --field="":LBL "" \
     --field="":LBL "" \
-    --field="           Xfce4 Power Manager !emblem-system":FBTN "bash -c 'xfce4-power-manager-settings'" \
+    --field="          Xfce4 Power Manager !emblem-system":FBTN "bash -c 'xfce4-power-manager-settings'" \
 exit
 else
 notify-send --urgency low 'No battery found' ;

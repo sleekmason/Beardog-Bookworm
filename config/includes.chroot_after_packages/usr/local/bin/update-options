@@ -5,7 +5,7 @@ yad --title "Options" --escape-ok \
 --text="\nUpdate Options\n" --text-align=center \
 --window-icon=applications-utilities \
     --form \
-    --field="   Check For Upgrades!system-software-update":FBTN "tint2-apt-update-check" \
+    --field="    Check For Upgrades!system-software-update":FBTN "tint2-apt-update-check" \
     --field="          System Updater!applications-system":FBTN "x-terminal-emulator -T 'Apt Update' -e 'sudo xupdate -i'" \
-    --field="         Lilidog Installers!applications-other":FBTN "ld-installers" \
-    --field="                       Synaptic!synaptic":FBTN "gksudo synaptic"
+    --field="        BD Quick Installer!applications-other":FBTN "quickinstaller" \
+    --field="       BD Utility Installer!synaptic":FBTN "bd-utilities-main-installers"
