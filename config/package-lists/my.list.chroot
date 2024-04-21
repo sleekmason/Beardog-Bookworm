@@ -38,6 +38,7 @@ file
 firmware-b43-installer
 firmware-b43legacy-installer
 fonts-font-awesome
+fonts-jetbrains-mono
 fuse3
 gconf-gsettings-backend
 geany
