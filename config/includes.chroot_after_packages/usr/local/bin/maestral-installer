@@ -74,7 +74,6 @@ if ! grep -q Firefox "$HOME/.config/jgmenu/prepend.csv"; then
 sed -i '/Firefox,            firefox,          firefox-esr/d' "$HOME/.config/jgmenu/prepend.csv"
 sed -i '7i Firefox,            firefox,          firefox-esr' "$HOME/.config/jgmenu/prepend.csv"
 fi
-read -n1 -p " Press any key to quit this dialog ... "
 else
 echo ""
  echo "   [0;31m-----------------------------------------------------[0m"

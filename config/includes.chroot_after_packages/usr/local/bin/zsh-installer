@@ -12,7 +12,7 @@ read -p "   [0;33mzsh shell installer[0m
    to change between zsh and bash.  A logout is required to complete.
    
    Any existing ~/.zshrc will be backed up to ~/.zshrc.bak and the 
-   default Beardog version will be placed in ~/.zshrc 
+   default Lilidog version will be placed in ~/.zshrc 
    
    [0;33m----------------------------------------------------------
    
@@ -46,7 +46,7 @@ cp /usr/share/lilidog/extras/zsh/.zshrc $HOME/.zshrc &
 sudo apt update && sudo apt install zsh &&
 echo ""
 echo ""
-echo "   [0;32mAdding custom ~/.zshrc to match Beardog defaults and
+echo "   [0;32mAdding custom ~/.zshrc to match Lilidog defaults and
    provide for some better default options.[0m"
 echo ""
 echo ""

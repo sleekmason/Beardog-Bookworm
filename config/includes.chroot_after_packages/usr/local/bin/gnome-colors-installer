@@ -19,7 +19,6 @@ read -p "   [0;33mGnome Colors Installer.[0m
 echo ""
 sudo apt update && sudo apt install -y gnome-colors
 sudo update-icon-caches /usr/share/icons/gnome*
-
 echo ""
 echo ""
 echo "[0;32mAll done. Enjoy your new icon themes![0m"
@@ -32,7 +31,6 @@ echo ""
  echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
  echo ""
  echo "   [0;31m-----------------------------------------------------[0m"
-echo ""
 echo ""
 fi
 read -n1 -p " Press any key to quit this dialog ... "

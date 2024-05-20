@@ -1,7 +1,10 @@
 #!/bin/bash
 read -p "   [0;33mGnome Installer.[0m
 
-    
+   For all of the gnome colors, use the gnome colors
+   installer located in the Graphics Installers.
+   
+   
    ---------------------------------------------------------------
    
    [0;32mPlease press enter to install Gnome.[0m
