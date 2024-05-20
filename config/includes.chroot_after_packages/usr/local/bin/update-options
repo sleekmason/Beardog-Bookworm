@@ -7,5 +7,4 @@ yad --title "Options" --escape-ok \
     --form \
     --field="    Check For Upgrades!system-software-update":FBTN "tint2-apt-update-check" \
     --field="          System Updater!applications-system":FBTN "x-terminal-emulator -T 'Apt Update' -e 'sudo xupdate -i'" \
-    --field="        BD Quick Installer!applications-other":FBTN "quickinstaller" \
-    --field="       BD Utility Installer!synaptic":FBTN "bd-utilities-main-installers"
+    --field="       Beardog Installers!applications-other":FBTN "ld-installers"
