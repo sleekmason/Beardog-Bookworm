@@ -296,7 +296,7 @@ _update
 _remove_packages
 _add_backports
 _upgrade_kernel
-#_sourcechanger
+_sourcechanger
 _add_lightdm
 _add_conky
 _osprober
@@ -315,7 +315,7 @@ _update
 _remove_packages
 _add_backports
 _upgrade_kernel
-#_sourcechanger
+_sourcechanger
 _add_lightdm
 _add_conky
 _firmware
