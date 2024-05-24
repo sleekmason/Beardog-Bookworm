@@ -40,7 +40,7 @@ Wallpaper Maker,    wallpaper-maker,                  applications-graphics
 Welcome Setup,      x-terminal-emulator -T "Welcome Setup" -e bash -c "sudo /usr/local/bin/xentry -i; read -srn1", applications-other
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
 Install Extras,     ld-installers,                    preferences-system-search
- 
+
 ^tag(toggles)
 Picom,               toggle.picom,                                  preferences-desktop-personal
 Sounds,              notification-sounds,                           preferences-desktop-personal
