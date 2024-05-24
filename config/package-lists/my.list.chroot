@@ -11,6 +11,8 @@ apt-xapian-index
 b43-fwcutter
 bash-completion
 bind9-dnsutils
+brightnessctl 
+brightness-udev
 btrfs-progs
 bzip2
 ca-certificates
@@ -94,6 +96,7 @@ openbox
 os-prober
 oss-compat
 p7zip-full
+pamixer
 pavucontrol
 pciutils
 pcmciautils
