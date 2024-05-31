@@ -13,4 +13,4 @@ yad --title "WM Installers" --escape-ok \
     --field="SOWM Borders":FBTN "x-terminal-emulator -T 'SOWM Borders Installer' -e bash -c "sowm-borders-installer"" \
     --field="":LBL "" \
     --field="":LBL "" \
-    --field="   Other Installers!/usr/share/icons/gnome/22x22/categories/applications-other.png":FBTN "bash -c 'bd-utilities-main-installers'"
+    --field="   Other Installers!/usr/share/icons/gnome/22x22/categories/applications-other.png":FBTN "bash -c 'ld-installers'"
