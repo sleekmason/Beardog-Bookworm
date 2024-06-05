@@ -36,8 +36,9 @@ if ! grep -wq "conky-restart-list" "$HOME/.config/openbox/autostart"; then
 echo ""
 echo '## Start conkys on login if present'	
 echo 'if test -f  "$HOME/.config/conky/scripts/conky-restart-list"; then'
-echo '"$HOME/.config/conky/scripts/conky-restart-list" &'
-echo '"/usr/local/bin/conkyrestart" &'
+echo '"$HOME/.config/conky/scripts/conky-restart-list"'
+echo 'sleep .50'
+echo '"/usr/local/bin/conkyrestart"'
 echo 'fi';} | tee -a "$HOME/.config/openbox/autostart" > /dev/null
   fi
 fi
