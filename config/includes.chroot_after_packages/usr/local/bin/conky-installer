@@ -29,6 +29,19 @@ fi
 echo ""
 	sed -i '/Conky,               conky-toggle,                                  preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv
 	sed -i '/Xkill/i Conky,               conky-toggle,                                  preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
+
+if test -e "$HOME/.config/conky"; then
+if ! grep -wq "conky-restart-list" "$HOME/.config/openbox/autostart"; then
+{
+echo ""
+echo '## Start conkys on login if present'	
+echo 'if test -f  "$HOME/.config/conky/scripts/conky-restart-list"; then'
+echo '"$HOME/.config/conky/scripts/conky-restart-list" &'
+echo '"/usr/local/bin/conkyrestart" &'
+echo 'fi';} | tee -a "$HOME/.config/openbox/autostart" > /dev/null
+  fi
+fi
+
 echo ""
 echo "[0;32m----------------------------------------------------------------------[0m"
 echo ""
