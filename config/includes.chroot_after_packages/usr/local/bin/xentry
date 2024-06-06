@@ -148,6 +148,7 @@ _add_notifications() {
 _add_conky() {
       _msg="Install Conky with custom configurations?"
       do_it() { cd /tmp &&
+		  rm -fr /tmp/conky*
 		  wget https://raw.githubusercontent.com/sleekmason/packages/master/conky-bear-bookworm2.zip --show-progress -q &&
 		        unzip -q conky-bear-bookworm2.zip
 		        if test -f /home/"${SUDO_USER}"/.config/conky; then
@@ -158,8 +159,8 @@ _add_conky() {
 		        fi
 		        chown -R "${SUDO_USER}":"${SUDO_USER}" /home/"${SUDO_USER}"/.config/conky &&
 		        apt-get install -y conky-all fortunes fortune-mod &&
-                	sed -i '/Conky,               conky-toggle,                                  preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv
-	                sed -i '/Xkill/i Conky,               conky-toggle,                                  preferences-desktop-personal' ~/.config/jgmenu/prepend.csv ;}
+                	sed -i '/Conky,               conky-toggle,                                  preferences-desktop-personal/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+	                sed -i '/Xkill/i Conky,               conky-toggle,                                  preferences-desktop-personal' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv ;}
         see_it
         no_see
         run_it
