@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=DkWM installer
-Exec=x-terminal-emulator -T 'DkWM Installer' -e bash -c "dk-installer"
-StartupNotify=false
-Terminal=false
-Icon=applications-system
-Categories=System;

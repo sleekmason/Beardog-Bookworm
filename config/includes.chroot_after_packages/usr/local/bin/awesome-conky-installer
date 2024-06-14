@@ -22,7 +22,7 @@ cd /tmp || exit
 ## Install necessary programs
 sudo apt update && sudo apt install -y conky-all fortunes fortune-mod
 ##If in Beardog, add entry to jgmenu:
-if test -e /usr/local/bin/xentry; then
+if ! grep -q "Beardog" "/etc/lsb-release"; then
 	sed -i '/Conky,               conky-toggle,                                  preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv
 	sed -i '/Xkill/i Conky,               conky-toggle,                                  preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
 fi
