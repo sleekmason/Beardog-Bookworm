@@ -24,7 +24,7 @@ if test -f ~/.config/conky; then
 	mv ~/.config/conky ~/.config/conky.bak &&
 	cp -r /tmp/conky ~/.config
 else                
-	cp -r /tmp/conky ~/.config              
+	cp -r /tmp/conky ~/.config
 fi
 echo ""
 	sed -i '/Conky,               conky-toggle,                                  preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv
@@ -37,8 +37,6 @@ echo ""
 echo '## Start conkys on login if present'	
 echo 'if test -f  "$HOME/.config/conky/scripts/conky-restart-list"; then'
 echo '"$HOME/.config/conky/scripts/conky-restart-list" >/dev/null 2>&1'
-echo 'sleep 1'
-echo '"/usr/local/bin/conkyrestart" >/dev/null 2>&1'
 echo 'fi';} | tee -a "$HOME/.config/openbox/autostart" > /dev/null
   fi
 fi
