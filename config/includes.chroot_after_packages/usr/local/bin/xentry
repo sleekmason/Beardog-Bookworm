@@ -158,7 +158,17 @@ _add_conky() {
                 cp -r /tmp/conky /home/"${SUDO_USER}"/.config              
 		        fi
 		        chown -R "${SUDO_USER}":"${SUDO_USER}" /home/"${SUDO_USER}"/.config/conky &&
-		        apt-get install -y conky-all fortunes fortune-mod &&
+		        apt-get update && apt-get install -y conky-all fortunes fortune-mod &&
+		        if test -e /home/"${SUDO_USER}"/.config/conky; then
+    if ! grep -wq "conky-restart-list" /home/"${SUDO_USER}"/.config/openbox/autostart; then
+		{
+		echo ""
+		echo '## Start conkys on login if present'	
+		echo 'if test -f  "$HOME/.config/conky/scripts/conky-restart-list"; then'
+		echo '"$HOME/.config/conky/scripts/conky-restart-list" >/dev/null 2>&1'
+		echo 'fi';} | tee -a /home/"${SUDO_USER}"/.config/openbox/autostart > /dev/null
+		fi
+	fi
                 	sed -i '/Conky,               conky-toggle,                                  preferences-desktop-personal/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
 	                sed -i '/Xkill/i Conky,               conky-toggle,                                  preferences-desktop-personal' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv ;}
         see_it
