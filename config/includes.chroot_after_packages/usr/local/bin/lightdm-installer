@@ -20,6 +20,9 @@ sudo cp /usr/share/lilidog/extras/lightdm/lightdm-gtk-greeter.conf /etc/lightdm 
 sed -i '/Auto Login,          lightdm-autologin,                             preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv &&
 sed -i '/Tint2 Toggle/a Auto Login,          lightdm-autologin,                             preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
 
+sed -i '/Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  lightdm-gtk-greeter-settings/d' ~/.config/jgmenu/prepend.csv &&
+sed -i '/^Keybinds/a Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  lightdm-gtk-greeter-settings' ~/.config/jgmenu/prepend.csv
+
 ## Comment startx
 sed -i 's/^exec startx/#exec startx/g' "$HOME/.profile"
 

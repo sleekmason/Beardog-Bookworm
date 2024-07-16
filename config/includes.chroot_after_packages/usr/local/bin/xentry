@@ -87,6 +87,8 @@ _add_lightdm() {
       _msg="Add the lightdm login manager?"
       do_it() { apt-get update && apt-get install -y lightdm lightdm-gtk-greeter-settings &&
 		        cp /usr/share/lilidog/extras/lightdm/lightdm-gtk-greeter.conf /etc/lightdm
+		        sed -i '/Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  lightdm-gtk-greeter-settings/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+                sed -i '/^Keybinds/a Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  lightdm-gtk-greeter-settings' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
 		        sed -i '/Auto Login,          lightdm-autologin,                             preferences-desktop-personal/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
                 sed -i '/Tint2 Toggle/a Auto Login,          lightdm-autologin,                             preferences-desktop-personal' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
                  if [[ $(command -v lightdm) ]]; then
