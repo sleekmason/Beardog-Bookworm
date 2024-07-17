@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Lilidog-Earth
-Comment=Lilidog-Earth based off Greybird theme
+Name=Island-blue
+Comment=Island-blue based off Greybird theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Lilidog-Earth
-MetacityTheme=Lilidog-Earth
+GtkTheme=Island-blue
+MetacityTheme=Island-blue
 IconTheme=Adwaita
 CursorTheme=Adwaita
 ButtonLayout=:minimize,maximize,close
