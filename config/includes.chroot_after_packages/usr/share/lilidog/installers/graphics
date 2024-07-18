@@ -2,6 +2,7 @@ Blender,            x-terminal-emulator -T 'Blender Installer' -e bash -c "blend
 GIMP,               x-terminal-emulator -T 'GIMP Installer' -e bash -c "gimp-installer",                       applications-graphics
 Gpicview,           x-terminal-emulator -T 'Gpicview Installer' -e bash -c "gpicview-installer",               applications-graphics
 Inkscape,           x-terminal-emulator -T 'Inkscape Installer' -e bash -c "inkscape-installer",               applications-graphics
+Theme Chooser,      x-terminal-emulator -T 'Theme Chooser Installer' -e bash -c "theme-chooser-installer",     applications-graphics
 Tuxpaint,           x-terminal-emulator -T 'Tuxpaint Installer' -e bash -c "tuxpaint-installer",               applications-graphics
 ^sep()
 Buuf Icons,         x-terminal-emulator -T 'Buuf Icon Theme Installer' -e bash -c "buuf-icon-installer",       applications-graphics
