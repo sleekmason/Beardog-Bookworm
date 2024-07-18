@@ -29,7 +29,7 @@ Icon Browser,       yad-icon-browser,              applications-science
 Screenshot,         xfce4-screenshooter,              preferences-desktop-display
 Gparted,            gksudo gparted,                   gparted
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
-Color Chooser,      yad --color,                      org.xfce.settings.color
+Color Chooser,      yad --color --gtk-palette --palette=/usr/share/X11/rgb.txt,                     org.xfce.settings.color
 Live Build Apps,    x-terminal-emulator -T "Live Build Apps Installer" -e bash -c "live-build-apps-installer", applications-other
 Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     applications-accessories
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
