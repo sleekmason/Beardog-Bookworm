@@ -2,7 +2,8 @@
 echo ""
 read -r -p "   [0;33mSlick Greeter Installer[0m
 
-   This script will install the slick-greeter lightdm version.
+   This script will install the lightdm slick-greeter version.
+   Look in Menu --> Configuration --> slickdm to change settings.
    
    
    [0;33m----------------------------------------------------------
@@ -14,8 +15,11 @@ read -r -p "   [0;33mSlick Greeter Installer[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
-sudo apt-get update && sudo apt-get install -y lightdm lightdm-settings slickgreeter &&
-sudo cp -af /usr/share/lilidog/extras/slick-lightdm/slick-greeter.conf /etc/lightdm
+sudo apt-get update && sudo apt-get install -y lightdm lightdm-settings slick-greeter &&
+
+# Copy configuration
+sudo cp -f /usr/share/lilidog/extras/slick-lightdm/slick-greeter.conf /etc/lightdm
+sudo cp -f /usr/share/lilidog/extras/slick-lightdm/50-slick-greeter.conf /usr/share/lightdm/lightdm.conf.d
 
 # Add and change to slick-greeter on line 109
 sudo sed -i '/greeter-session=.*/d' "/etc/lightdm/lightdm.conf"
