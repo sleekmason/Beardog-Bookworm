@@ -1,9 +1,9 @@
 #!/bin/bash
 echo ""
-read -r -p "   [0;33mLightdm Installer[0m
+read -r -p "   [0;33mSlick Greeter Installer[0m
 
-   This script will install the lightdm login manager with a 
-   customized greeter for Beardog.
+   This script will install the slick-greeter lightdm version.
+   
    
    [0;33m----------------------------------------------------------
    
@@ -14,21 +14,22 @@ read -r -p "   [0;33mLightdm Installer[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
-sudo apt-get update && sudo apt-get install -y lightdm lightdm-gtk-greeter-settings &&
-sudo cp -af /usr/share/lilidog/extras/lightdm/ /usr/share
+sudo apt-get update && sudo apt-get install -y lightdm lightdm-settings slickgreeter &&
+sudo cp -af /usr/share/lilidog/extras/slick-lightdm/slick-greeter.conf /etc/lightdm
 
-## Toggle to lightdm-greeter
+# Add and change to slick-greeter on line 109
 sudo sed -i '/greeter-session=.*/d' "/etc/lightdm/lightdm.conf"
-sudo sed -i '109a greeter-session=lightdm-greeter' "/etc/lightdm/lightdm.conf"
+sudo sed -i '109a greeter-session=slick-greeter' "/etc/lightdm/lightdm.conf"
 # Alternate method
-# sudo sed -i '/Font Sizes/a greeter-session=lightdm-greeter' "/etc/lightdm/lightdm.conf"
+# sudo sed -i '/Font Sizes/a greeter-session=slick-greeter' "/etc/lightdm/lightdm.conf"
 
+#greeter-session=lightdm-gtk-greeter
 # Add option for autologin to toggles menu
 sed -i '/Auto Login,          lightdm-autologin,                             preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv &&
 sed -i '/Tint2 Toggle/a Auto Login,          lightdm-autologin,                             preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
 
-sed -i '/Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  lightdm-gtk-greeter-settings/d' ~/.config/jgmenu/prepend.csv &&
-sed -i '/^Keybinds/a Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  lightdm-gtk-greeter-settings' ~/.config/jgmenu/prepend.csv
+sed -i '/Slickdm,             gksudo lightdm-settings,                                  lightdm-settings/d' ~/.config/jgmenu/prepend.csv &&
+sed -i '/^Keybinds/a Slickdm,             gksudo lightdm-settings,                                  lightdm-settings' ~/.config/jgmenu/prepend.csv
 
 ## Comment startx
 sed -i 's/^exec startx/#exec startx/g' "$HOME/.profile"
@@ -42,10 +43,10 @@ fi
 echo ""
 echo "[0;32m----------------------------------------------------------------------[0m"
 echo ""
-echo "   [0;32mReboot to use the Lightdm login manager.[0m"
+echo "   [0;32mReboot to use lightdm slick greeter.[0m"
 echo ""
 echo "[0;32m----------------------------------------------------------------------[0m"
-echo $'\n\nPress any key to quit ...'; read -srn1
+
 else
 echo ""
  echo "   [0;31m-----------------------------------------------------[0m"
@@ -54,5 +55,5 @@ echo ""
  echo ""
  echo "   [0;31m-----------------------------------------------------[0m"
 echo ""
-echo $'\n\nPress any key to quit ...'; read -srn1
 fi
+echo $'\n\nPress any key to quit ...'; read -srn1
