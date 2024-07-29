@@ -15,7 +15,7 @@ read -r -p "   [0;33mLightdm Installer[0m
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 sudo apt-get update && sudo apt-get install -y lightdm lightdm-gtk-greeter-settings &&
-sudo cp /usr/share/lilidog/extras/lightdm/lightdm-gtk-greeter.conf /etc/lightdm &&
+sudo cp -af /usr/share/lilidog/extras/lightdm/ /usr/share
 # Add option for autologin to toggles menu
 sed -i '/Auto Login,          lightdm-autologin,                             preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv &&
 sed -i '/Tint2 Toggle/a Auto Login,          lightdm-autologin,                             preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
