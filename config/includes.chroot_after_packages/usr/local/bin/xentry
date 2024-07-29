@@ -84,9 +84,13 @@ _update() {
 }
 
 _add_lightdm() {
-      _msg="Add the lightdm login manager?"
+      _msg="Add lightdm? (choose 'N' if wanting slick-greeter instead.)"
       do_it() { apt-get update && apt-get install -y lightdm lightdm-gtk-greeter-settings &&
 		        cp -af /usr/share/lilidog/extras/lightdm/ /usr/share
+		        ## Toggle to lightdm-greeter
+                sed -i '/greeter-session=.*/d' "/etc/lightdm/lightdm.conf"
+                sed -i '108a greeter-session=lightdm-greeter' "/etc/lightdm/lightdm.conf"
+                ## Menu additions
 		        sed -i '/Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  lightdm-gtk-greeter-settings/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
                 sed -i '/^Keybinds/a Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  lightdm-gtk-greeter-settings' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
 		        sed -i '/Auto Login,          lightdm-autologin,                             preferences-desktop-personal/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
@@ -102,6 +106,33 @@ _add_lightdm() {
         no_see
         run_it
 }
+
+_add_slick() {
+      _msg="Add lightdm slick-greeter?"
+      do_it() { apt-get update && apt-get install -y lightdm lightdm-settings slick-greeter &&
+		        cp -f /usr/share/lilidog/extras/slick-lightdm/slick-greeter.conf /etc/lightdm
+                cp -f /usr/share/lilidog/extras/slick-lightdm/50-slick-greeter.conf /usr/share/lightdm/lightdm.conf.d
+		        ## Toggle to lightdm-greeter
+                sed -i '/greeter-session=.*/d' "/etc/lightdm/lightdm.conf"
+                sed -i '108a greeter-session=slick-greeter' "/etc/lightdm/lightdm.conf"
+                ## Menu additions
+		        sed -i '/Slickdm,             gksudo lightdm-settings,                                  lightdm-settings/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+                sed -i '/^Keybinds/a Slickdm,             gksudo lightdm-settings,                                  lightdm-settings' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+		        sed -i '/Auto Login,          lightdm-autologin,                             preferences-desktop-personal/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+                sed -i '/Tint2 Toggle/a Auto Login,          lightdm-autologin,                             preferences-desktop-personal' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+                 if [[ $(command -v lightdm) ]]; then
+                   if grep -Fxq 'exec "$session"' /home/"${SUDO_USER}"/.xsessionrc; then
+                   sed -i 's/^exec "$session"/#exec "$session"/' /home/"${SUDO_USER}"/.xsessionrc
+                   fi
+                 fi
+		        sed -i 's/^exec startx/#exec startx/g' /home/"${SUDO_USER}"/.profile ;}
+      
+        see_it
+        no_see
+        run_it
+}
+
+
 
 _add_jgmenu() {
       _msg=" Install jgmenu to replace the Openbox default?"
@@ -311,6 +342,7 @@ _add_backports
 _upgrade_kernel
 _sourcechanger
 _add_lightdm
+_add_slick
 _add_conky
 _osprober
 _firmware
@@ -330,6 +362,7 @@ _add_backports
 _upgrade_kernel
 _sourcechanger
 _add_lightdm
+_add_slick
 _add_conky
 _firmware
 _reboot
