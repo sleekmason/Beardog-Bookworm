@@ -16,7 +16,7 @@ lb config noauto \
      --firmware-chroot 'true' \
      --security 'true' \
      --memtest 'memtest86+' \
-     --image-name 'Beardog-Bookworm-24.07.26' \
+     --image-name 'Beardog-Bookworm-24.08.05' \
      --iso-application 'Beardog-Bookworm' \
      --iso-publisher 'Beardog-bookworm GNU/Linux' \
      --iso-volume 'Beardog-Bookworm' \
