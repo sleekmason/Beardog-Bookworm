@@ -84,7 +84,7 @@ _update() {
 }
 
 _add_lightdm() {
-      _msg="Add lightdm? (choose 'N' if wanting slick-greeter instead.)"
+      _msg="Add lightdm? (choose 'n' if wanting slick-greeter instead.)"
       do_it() { apt-get update && apt-get install -y lightdm lightdm-gtk-greeter-settings &&
 		        cp -af /usr/share/lilidog/extras/lightdm/ /usr/share
 		        ## Toggle to lightdm-greeter
