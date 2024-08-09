@@ -132,8 +132,6 @@ _add_slick() {
         run_it
 }
 
-
-
 _add_jgmenu() {
       _msg=" Install jgmenu to replace the Openbox default?"
       do_it() { cd /tmp &&
