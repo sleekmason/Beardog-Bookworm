@@ -89,7 +89,7 @@ _add_lightdm() {
 		        cp -rf /usr/share/lilidog/extras/lightdm/ /usr/share
 		        ## Toggle to lightdm-greeter
                 sed -i '/greeter-session=.*/d' "/etc/lightdm/lightdm.conf"
-                sed -i '108a greeter-session=lightdm-greeter' "/etc/lightdm/lightdm.conf"
+                sed -i '108a greeter-session=lightdm-gtk-greeter' "/etc/lightdm/lightdm.conf"
                 ## Menu additions
                 sed -i '/Lightdm,             lightdm-options,.*/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
                 sed -i '/^Keybinds/a Lightdm,             lightdm-options,                                                      lightdm-gtk-greeter-settings' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
