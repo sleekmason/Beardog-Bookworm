@@ -106,7 +106,7 @@ _add_lightdm() {
 }
 
 _add_slick() {
-      _msg="Add lightdm slick-greeter?"
+      _msg="Add and use lightdm slick-greeter?" 
       do_it() { apt-get update && apt-get install -y lightdm lightdm-settings slick-greeter &&
 		        cp -f /usr/share/lilidog/extras/slick-lightdm/slick-greeter.conf /etc/lightdm
                 cp -f /usr/share/lilidog/extras/slick-lightdm/50-slick-greeter.conf /usr/share/lightdm/lightdm.conf.d
