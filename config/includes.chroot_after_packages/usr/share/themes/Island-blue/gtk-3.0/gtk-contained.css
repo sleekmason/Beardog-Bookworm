@@ -19,7 +19,7 @@
  * Base States *
  ***************/
 .background {
-  color: #E3E3DF;
+  color: #E8E8E4;
   background-color: #3E434A; }
   .background:backdrop {
     color: #8D9599;
@@ -461,7 +461,7 @@ button {
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #24272B;
     background-image: linear-gradient(to bottom, shade(#315F75, 1), shade(#33637A, 1));
-    box-shadow: inset 0 1px #424A54;
+    box-shadow: inset 0 1px #315F75;
     -gtk-icon-effect: highlight; }
   notebook > header > tabs > arrow:active, button.titlebutton:active, notebook > header > tabs > arrow:checked, button.titlebutton:checked,
   button:active,
@@ -4827,9 +4827,9 @@ XfdesktopIconView.view {
     box-shadow: none; }
   .lightdm-gtk-greeter #login_window #user_combobox {
     color: #E8E8E3;
-    font-size: 18px; }
+    font-size: 16px; }
     .lightdm-gtk-greeter #login_window #user_combobox menu {
-      font-weight: normal; }
+      font-weight: bold; }
   .lightdm-gtk-greeter #login_window #user_image {
     padding: 3px;
     border-radius: 3px;
