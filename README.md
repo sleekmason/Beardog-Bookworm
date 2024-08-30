@@ -18,9 +18,9 @@ There are four general builds: full, minimal, minimal-i386, and beardog.
 
 - Minimal - (Approx. 1080 packages), has everything the full version does, minus most of the main packages so people can choose their own. This version is great for people that like to tinker, and want to learn a bit more about linux.
 
-- Beardog - (Approx. 920 packages), is the 'bare' version of lilidog, allowing users to choose most of what they want. A general knowledge of linux is recommended.
-
 - Lilidog-i386 - Uses the same base packages as the amd64 minimal version, but for older 32 bit hardware. You may find you need to boot with the kernel parameter 'forcepae' if you have difficulties.    
+
+- Beardog - (Approx. 920 packages), is the 'bare' version of lilidog, allowing users to choose most of what they want. A general knowledge of linux is recommended.
 
 #### NOTE - The DOWNLOAD button defaults to the full version. Click on FILES, and then RELEASES to access the other builds.
 
