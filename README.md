@@ -22,7 +22,7 @@ There are four general builds: full, minimal, minimal-i386, and beardog.
 
 - Lilidog-i386 - Uses the same base packages as the amd64 minimal version, but for older 32 bit hardware. You may find you need to boot with the kernel parameter 'forcepae' if you have difficulties.    
 
-## NOTE - The DOWNLOAD button defaults to the full version. Click on FILES, and then RELEASES to access the others.
+#### NOTE - The DOWNLOAD button defaults to the full version. Click on FILES, and then RELEASES to access the other builds.
 
 <a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
 
