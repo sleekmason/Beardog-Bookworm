@@ -2,7 +2,7 @@
 ### About Lilidog:
 
 Lilidog is a lightweight linux distro based on debian.  Lilidog uses the Openbox window manager with tint2, thunar, and xfce4-terminal.
-Other window managers are also made available through the Lilidog installers. These are awesome, dk, dwm, jwm, and sowm.<br/>
+Other window managers are also made available through the Lilidog installers. These are awesome, dk, dwm, i3, jwm, and sowm.<br/>
 
 Lilidog is based on debian stable, with some of the hard parts done, and some cool stuff along the way. 
 Everything is easily accessible, with numerous options to customize further.
@@ -22,7 +22,7 @@ There are four general builds: full, minimal, minimal-i386, and beardog.
 
 - Lilidog-i386 - Uses the same base packages as the amd64 minimal version, but for older 32 bit hardware. You may find you need to boot with the kernel parameter 'forcepae' if you have difficulties.    
 
-### NOTE - The DOWNLOAD button defaults to the full version! Click on FILES, and then RELEASES to access the others.
+## NOTE - The DOWNLOAD button defaults to the full version. Click on FILES, and then RELEASES to access the others.
 
 <a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
 
