@@ -10,7 +10,7 @@ Everything is easily accessible, with numerous options to customize further.
 Website: https://lilidog.org/
 Forum Link: https://www.forum.lilidog.org/ <br/>
 
-### Available Versions:
+#### Available Versions:
 
 There are four general builds: full, minimal, minimal-i386, and beardog.  
 
@@ -26,7 +26,7 @@ There are four general builds: full, minimal, minimal-i386, and beardog.
 
 <a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
 
-### Current Releases:
+#### Current Releases:
 
  The version number is the date of the release beginning with the year, followed by the month, and then the day.  So as an example, release 23.12.21 stands for the 21st of Dec, 2023.  One way to see this after a Lilidog installation is to look at the Install Date Conky for the installation and build date.  Another way is to open a terminal and:
 
@@ -48,7 +48,7 @@ There have been more than 2500 commits since Lilidog was created!  Lilidogs firs
 
 If there is a particular new feature you see here on the forum and would like to have but are unsure of how to get it, just ask, and most can be directly applied to your current system with ease.  I've no problem providing direction or files to get it done. 
 
-### Directions For Installation:
+#### Directions For Installation:
 
 Probably the easiest way to use Lilidog is to put it on a usb stick.
 
@@ -68,11 +68,11 @@ When booting into the live session, another opportunity to install can be had by
 
 Lilidog opens in the Openbox window manager. Easy enough to install others window managers if desired. They will show up in your login screen as options. The username and password for the live environment is "user", and "live" respectively.
 
-### Navigating Lilidog:
+#### Navigating Lilidog:
 
 After boot, you have the option to install or try out Lilidog live.  Once in a session, there are a few items that can shape your experience. Look in the "paw" icon in the tint2 panel for theming options.  Look in the "Toggles" section of the menu for some other useful options, and look in the "Install Extras" portion of the menu for extra programs you may want.  Look around.  There's more to see as well.
 
-### Some Of The Basic Features:
+#### Some Of The Basic Features:
 
 - Based on Debian with contrib and non-free sources enabled by default.
 
@@ -125,16 +125,16 @@ customized rofi 'drun' menu.
 - ld-hotcorners - Each corner of the screen responds to a command.
 Turn it on with the button in the lower left corner or under Toggles in the menu. Change the corners in ~/.config/ld-hotcorners. Currently clockwise from top left: __file manager, toggle Picom, exit menu, and terminal.
 
-### Instructions For Various Tasks:
+#### Instructions For Various Tasks:
 
-### Theme changes: 
+#### Theme changes: 
 The easiest way to change themes is with the 'Quick Theme Changer' located in the menu under Configuration.
 This changes The GTK theme, Openbox theme, Geany theme, Lightdm, wallpaper, menu, and terminal theme all on the fly.
 
-### Working with the theme changer:
+#### Working with the theme changer:
 All of the theme file configurations are located in ~/.config/lilidog-themes. This will allow you to change the settings on the existing themes.   For a quick overview see the discussion: [HERE](https://forum.lilidog.org/d/559-adding-gtk-and-openbox-themes-to-the-auto-themes-changer)
 
-### Other Settings:
+#### Other Settings:
 - For keyboard language layout see: https://sourceforge.net/p/lilidog/discussion/setup/thread/e9e88533c0/<br/>
 - Most common items to change will have an entry under 'Configuration' in the menu.
 - Settings Manager - Change your gtk theme, fonts, and icons on an individual basis.  Other important settings are here as well.
@@ -149,6 +149,6 @@ Also look under the "Toggles" section in the menu for some instant changes to di
 
 Github: https://github.com/sleekmason/Lilidog
 
-### Lilidog
+#### Lilidog
 [![Lili.png](https://i.postimg.cc/hjy8qYS8/Lili.png)](https://postimg.cc/5YzQBnQj)
 
