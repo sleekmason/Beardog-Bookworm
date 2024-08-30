@@ -24,6 +24,8 @@ There are four general builds: full, minimal, minimal-i386, and beardog.
 
 ### NOTE - The DOWNLOAD button defaults to the full version! Click on FILES, and then RELEASES to access the others.
 
+<a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
+
 ### Current Releases:
 
  The version number is the date of the release beginning with the year, followed by the month, and then the day.  So as an example, release 23.12.21 stands for the 21st of Dec, 2023.  One way to see this after a Lilidog installation is to look at the Install Date Conky for the installation and build date.  Another way is to open a terminal and:
