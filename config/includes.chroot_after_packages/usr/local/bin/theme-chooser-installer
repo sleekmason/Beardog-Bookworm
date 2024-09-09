@@ -3,11 +3,11 @@ echo ""
 read -p "   [0;33mTheme Chooser Installer.[0m
 
    This script will download and install the Lilidog Theme Chooser
-   with all the Lilidog themes for GTK, openbox, xfce4-terminal
-   and geany.
+   with all the Lilidog themes for Geany, openbox, xfce4-terminal
+   and GTK.
    
-   This will also allow you to customize four different themes 
-   with the highlight color of your choice.
+   This will also allow for customizing four different themes with
+   the highlight color of your choice.
       
    [0;33m----------------------------------------------------------
    
@@ -54,6 +54,9 @@ sudo cp -f "/tmp/themechooser/theme-chooser.desktop" "/usr/share/applications"
 
 # copy lilidog-themes config files to ~/.config
 cp -fr "/tmp/themechooser/lilidog-themes" "$HOME/.config"
+
+# copy Rofi config files to ~/.config
+cp -ar "/tmp/themechooser/rofi" "$HOME/.config"
 
 # Copy Readme.lilidog-themes to /usr/share/lilidog
 if test -e "/usr/share/lilidog"; then
