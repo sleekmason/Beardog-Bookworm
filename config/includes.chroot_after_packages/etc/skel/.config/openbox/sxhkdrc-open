@@ -78,6 +78,14 @@ mod4 + t
 mod4 + f
 	thunar
 
+# File Manager split view.
+shift + mod4 + f
+	splitview
+	
+# File Manager split vertical-horizontal.
+mod4 + s
+	xfconf-query -c thunar -p /misc-vertical-split-pane -T
+
 # Editor.
 mod4 + e
 	geany  
@@ -128,7 +136,3 @@ Print
 # screenshot and selection capture scrot.
 alt + Print
 	scrot-options
-
-# Thunar Splitview.
-alt + s
-	xfconf-query -c thunar -p /misc-vertical-split-pane -T
