@@ -27,8 +27,8 @@ cd /tmp || exit &&
 rm -f /tmp/dk_2.1-1~lilidog_amd64.deb
 rm -f /tmp/dk-conf-files2.1.zip
 rm -f -r /tmp/dk-conf-files
-wget https://raw.githubusercontent.com/sleekmason/packages-dk/master/deb-files/dk_2.1-1~lilidog_amd64.deb --show-progress -q &&
-wget https://raw.githubusercontent.com/sleekmason/packages-dk/master/zip-files/dk-conf-files2.1.zip --show-progress -q &&
+wget --prefer-family=IPv4 https://raw.githubusercontent.com/sleekmason/packages-dk/master/deb-files/dk_2.1-1~lilidog_amd64.deb --show-progress -q &&
+wget --prefer-family=IPv4 https://raw.githubusercontent.com/sleekmason/packages-dk/master/zip-files/dk-conf-files2.1.zip --show-progress -q &&
 unzip -q dk-conf-files2.1.zip &&
 echo ""
 sudo apt install -y /tmp/./dk_2.1-1~lilidog_amd64.deb polybar sxhkd &&
@@ -102,7 +102,7 @@ echo ""
 echo "   [0;33mLogout and choose dk to change WM's if lightdm is installed.[0m"
 echo ""
 echo "   [0;31mIf lightdm is not installed, edit ~/.xsessionrc and change:
-   'WMSelection=openbox' and uncomment:
+   'WMSelection=openbox' to dk, and uncomment:
    '#exec "session"' -- Second to last line. Log out and back in.[0m"
 echo ""
 echo "   [0;33mTo uninstall, run: 'dk-uninstaller' in a terminal, or to
@@ -119,4 +119,4 @@ echo ""
 echo ""
 fi
 echo ""
-echo $'\n\nPress any key to quit ...'; read -srn1
+read -n1 -p " Press any key to quit this dialog ... "
