@@ -132,33 +132,6 @@
 	<image-files/>
 </action>
 <action>
-	<icon>gpick</icon>
-	<name>Clickpick BG Gradient4</name>
-	<unique-id>1644263149036316-1</unique-id>
-	<command>feh --geometry 640x400+28+28 --scale-down --image-bg black %f &amp; clickpick-gradient4</command>
-	<description>Click on any four colors to make wallpaper.</description>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
-	<icon>gpick</icon>
-	<name>Clickpick BG Gradient</name>
-	<unique-id>1643818839735115-1</unique-id>
-	<command>feh --geometry 640x400+28+28 --scale-down --image-bg black %f &amp; clickpick-gradient</command>
-	<description>Choose two colors to make a gradient wallpaper.</description>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
-	<icon>gpick</icon>
-	<name>Clickpick BG Single</name>
-	<unique-id>1643754305409176-1</unique-id>
-	<command>feh --geometry 640x400+28+28 --scale-down --image-bg black %f &amp; clickpick</command>
-	<description>Choose a single color to make a wallpaper.</description>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
 	<icon>system-software-install</icon>
 	<name>Install Deb Package</name>
 	<unique-id>1639627177846769-2</unique-id>
