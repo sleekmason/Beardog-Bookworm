@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Wallpapers
-Exec=feh-set-wallpaper
+Name=Lilidog Installers
+Exec=ld-installers
 StartupNotify=false
 Terminal=false
-Icon=preferences-desktop-wallpaper
+Icon=system-software-install
 Categories=ld-misc-tools;

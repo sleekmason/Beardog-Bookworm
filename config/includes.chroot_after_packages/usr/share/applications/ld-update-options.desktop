@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Notification Sounds
-Exec=notification-sounds
+Name=Upgrade Options
+Exec=update-options
 StartupNotify=false
 Terminal=false
-Icon=audio-x-generic
+Icon=applications-other
 Categories=ld-misc-tools;

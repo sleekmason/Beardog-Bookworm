@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=BD Utility Installers
-Exec=bash -c 'bd-utilities-main-installers'
-StartupNotify=false
-Terminal=false
-Icon=system-software-install
-Categories=System;ld-misc-tools;

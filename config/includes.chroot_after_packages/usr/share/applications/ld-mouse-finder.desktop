@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Random Wallpaper
-Exec=toggle-wallpaper-random
+Name=Mouse Finder
+Exec=toggle-mouse-pointer
 StartupNotify=false
 Terminal=false
-Icon=preferences-desktop-wallpaper
+Icon=preferences-system
 Categories=ld-misc-tools;

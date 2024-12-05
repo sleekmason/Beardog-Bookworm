@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Theming Options
+Exec=ld-theme-changer
+StartupNotify=false
+Terminal=false
+Icon=applications-graphics
+Categories=ld-misc-tools;

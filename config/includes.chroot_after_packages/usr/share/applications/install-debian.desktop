@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Install Beardog
+Name=Install Lilidog
 GenericName=Calamares Installer
-Exec=install-beardog
+Exec=install-lilidog
 Comment=Calamares — Installer for Debian Live
 Keywords=calamares;system;install;debian;installer
 Icon=install-debian
