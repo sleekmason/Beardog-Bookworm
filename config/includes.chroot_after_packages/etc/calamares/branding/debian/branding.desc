@@ -10,7 +10,7 @@ strings:
     productName:         Debian GNU/Linux
     shortProductName:    Debian
     version:             12 (bookworm)
-    shortVersion:        12
+    shortVersion:        11
     versionedName:       Debian 12 (bookworm)
     shortVersionedName:  Debian 12
     bootloaderEntryName: Debian

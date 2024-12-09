@@ -1,5 +1,5 @@
 ---
-componentName:   beardog
+componentName:   lilidog
 welcomeStyleCalamares: false
 welcomeExpandingLogo: true
 windowExpanding: normal
@@ -7,13 +7,13 @@ windowSize: 800px,520px
 windowPlacement: center
 
 strings:
-    productName:         Beardog GNU/Linux
-    shortProductName:    Beardog
+    productName:         Lilidog GNU/Linux
+    shortProductName:    Lilidog
     version:             12 (bookworm)
     shortVersion:        12
-    versionedName:       Beardog 12 (bookworm)
-    shortVersionedName:  Beardog 12
-    bootloaderEntryName: Beardog 12
+    versionedName:       Lilidog 12 (bookworm)
+    shortVersionedName:  Lilidog 12
+    bootloaderEntryName: Lilidog 12
     productUrl:          https://lilidog.org
     supportUrl:          https://www.forum.lilidog.org/
     knownIssuesUrl:      https://www.forum.lilidog.org/
@@ -21,17 +21,17 @@ strings:
     donateUrl:           https://www.forum.lilidog.org/
 
 images:
-    productLogo:         "lilidog-logo-ozark.png"
-    productIcon:         "lilidog-logo-ozark.png"
+    productLogo:         "lilidog-logo-fane.png"
+    productIcon:         "lilidog-logo-fane.png"
     productWelcome:      "welcome.png"
     productWallpaper:    "Gray.png"
 
 slideshow:               "show.qml"
 
 style:
-   sidebarBackground:    "#2E343B"
-   sidebarText:          "#DAE1E3"
+   sidebarBackground:    "#1E2E36"
+   sidebarText:          "#DAE4E8"
    sidebarTextSelect:    "#FFFFFF"
-   sidebarTextHighlight: "#346178"
+   sidebarTextHighlight: "#236C76"
 
 slideshowAPI: 2

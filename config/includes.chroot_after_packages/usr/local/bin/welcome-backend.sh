@@ -12,7 +12,7 @@ if grep -q "$fs" /proc/partitions; then
 --button=" Begin"!/usr/share/icons/gnome/22x22/places/debian-swirl.png!:"x-terminal-emulator -T 'Customization' -e 'sudo xentry -i'" \
 --button=" Exit!application-exit:0" \
 --text-info --justify=left --wrap < /usr/share/lilidog/welcome.txt --fontname="Sans 11" \
---fore="#E6E6E3"; sed -i '/welcome-backend.sh &/d' ~/.config/openbox/autostart; if ! grep hypervisor /proc/cpuinfo ; then sed -i '/vmrestore.*/d' ~/.config/openbox/autostart; fi; exit
+--fore="#DAE4E8"; sed -i '/welcome-backend.sh &/d' ~/.config/openbox/autostart; if ! grep hypervisor /proc/cpuinfo ; then sed -i '/vmrestore.*/d' ~/.config/openbox/autostart; fi; exit
 else
 #gsettings set org.gnome.desktop.interface icon-theme "Obsidian-Gray" &&
 /usr/local/bin/live-session &&
@@ -21,5 +21,5 @@ else
 --width=375 --height=485 --center --escape-ok --undecorated --skip-taskbar \
 --button="gtk-ok:0" \
 --text-info --justify=left --wrap < /usr/share/lilidog/welcome2.txt --fontname="Sans 11" \
---fore="#E6E6E3"; sed -i '/welcome-backend.sh. &/d' ~/.config/openbox/autostart
+--fore="#DAE4E8"; sed -i '/welcome-backend.sh. &/d' ~/.config/openbox/autostart
 fi
