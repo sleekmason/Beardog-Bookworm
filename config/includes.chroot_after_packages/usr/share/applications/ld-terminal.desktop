@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Terminal Themes
-Exec=ld-term-changer
-StartupNotify=false
-Terminal=false
-Icon=org.xfce.terminalemulator
-Categories=ld-theme-tools;
