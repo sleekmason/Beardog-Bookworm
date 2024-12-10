@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=LD Themes Installer
+Exec=theme-chooser-installer
+StartupNotify=false
+Terminal=false
+Icon=applications-graphics
+Categories=ld-misc-tools;
