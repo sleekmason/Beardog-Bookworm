@@ -27,6 +27,11 @@ if test -f ~/.config/conky; then
 else                
 	cp -r /tmp/conky ~/.config
 fi
+
+# Copy .desktop file to /usr/share/applications
+sudo cp -f "/usr/share/lilidog/extras/conky/conky.desktop" "/usr/share/applications"
+sudo cp -f "/usr/share/lilidog/extras/conky/ld-conky-chooser.desktop" "/usr/share/applications"
+
 echo ""
 	sed -i '/Conky,               conky-toggle,                                  preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv
 	sed -i '/Xkill/i Conky,               conky-toggle,                                  preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
