@@ -52,7 +52,7 @@ conkyrestart >/dev/null 2>&1
 echo ""
 echo "[0;32m----------------------------------------------------------------------[0m"
 echo ""
-echo "   [0;32mA new menu entry will be placed in Toggles.[0m"
+echo "   [0;32mNew menu entries will be placed in 'Toggles' and the 'Other' category.[0m"
 echo ""
 echo "[0;32m----------------------------------------------------------------------[0m"
 echo $'\n\nPress any key to quit ...'; read -srn1
