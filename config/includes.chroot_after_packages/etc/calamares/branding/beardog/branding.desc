@@ -1,5 +1,5 @@
 ---
-componentName:   lilidog
+componentName:   Beardog
 welcomeStyleCalamares: false
 welcomeExpandingLogo: true
 windowExpanding: normal
@@ -7,13 +7,13 @@ windowSize: 800px,520px
 windowPlacement: center
 
 strings:
-    productName:         Lilidog GNU/Linux
-    shortProductName:    Lilidog
+    productName:         Beardog GNU/Linux
+    shortProductName:    Beardog
     version:             12 (bookworm)
     shortVersion:        12
-    versionedName:       Lilidog 12 (bookworm)
-    shortVersionedName:  Lilidog 12
-    bootloaderEntryName: Lilidog 12
+    versionedName:       Beardog 12 (bookworm)
+    shortVersionedName:  Beardog 12
+    bootloaderEntryName: Beardog 12
     productUrl:          https://lilidog.org
     supportUrl:          https://www.forum.lilidog.org/
     knownIssuesUrl:      https://www.forum.lilidog.org/
