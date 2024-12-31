@@ -198,8 +198,8 @@ _add_conky() {
 	fi
 	    cp -f "/usr/share/lilidog/extras/conky/conky.desktop" "/usr/share/applications"
         cp -f "/usr/share/lilidog/extras/conky/ld-conky-chooser.desktop" "/usr/share/applications"
-        sed -i '/Conky,               conky-toggle,                                  preferences-desktop-personal/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
-	    sed -i '/Xkill/i Conky,               conky-toggle,                                  preferences-desktop-personal' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv ;}
+        sed -i '/Conky,               conky-toggle,                                  org.xfce.settings.manager/d' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv
+	    sed -i '/Xkill/i Conky,               conky-toggle,                                  org.xfce.settings.manager' /home/"${SUDO_USER}"/.config/jgmenu/prepend.csv ;}
         see_it
         no_see
         run_it

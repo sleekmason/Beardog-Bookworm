@@ -33,8 +33,8 @@ sudo cp -f "/usr/share/lilidog/extras/conky/conky.desktop" "/usr/share/applicati
 sudo cp -f "/usr/share/lilidog/extras/conky/ld-conky-chooser.desktop" "/usr/share/applications"
 
 echo ""
-	sed -i '/Conky,               conky-toggle,                                  preferences-desktop-personal/d' ~/.config/jgmenu/prepend.csv
-	sed -i '/Xkill/i Conky,               conky-toggle,                                  preferences-desktop-personal' ~/.config/jgmenu/prepend.csv
+	sed -i '/Conky,               conky-toggle,                                  org.xfce.settings.manager/d' ~/.config/jgmenu/prepend.csv
+	sed -i '/Xkill/i Conky,               conky-toggle,                                  org.xfce.settings.manager' ~/.config/jgmenu/prepend.csv
 
 if test -e "$HOME/.config/conky"; then
 if ! grep -wq "conky-restart-list" "$HOME/.config/openbox/autostart"; then
