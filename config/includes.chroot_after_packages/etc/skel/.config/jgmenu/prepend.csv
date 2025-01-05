@@ -40,6 +40,7 @@ Sxhkd Keys OB,      show-keybinds,                    preferences-desktop-keyboa
 Update Options,     update-options,                   system-software-update
 Welcome Setup,      x-terminal-emulator -T "Welcome Setup" -e bash -c "sudo /usr/local/bin/xentry -i; read -srn1", applications-other
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
+USBImager,          gksudo usbimager,                 usbimager
 Install Extras,     ld-installers,                    preferences-system-search
 
 ^tag(toggles)
