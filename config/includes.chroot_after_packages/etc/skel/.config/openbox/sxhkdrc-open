@@ -20,15 +20,7 @@ mod4 + o
 
 # Jgmenu.
 mod4 + F1
-	jgmenu_run 
-
-# Rofi full.
-mod4 + F2
-	~/.config/rofi/scripts/rofi-familiar
-
-# Rofi Drun.
-mod4 + F3
-	rofi -show drun
+	jgmenu_run
 
 # Dmenu.
 mod4 + F5

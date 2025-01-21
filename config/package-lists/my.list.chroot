@@ -113,7 +113,6 @@ python3-six
 python3-xdg
 python3-xlib
 rename
-rofi
 rsync
 scrot
 squashfs-tools

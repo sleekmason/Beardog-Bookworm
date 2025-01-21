@@ -28,7 +28,6 @@ Icon Browser,       yad-icon-browser,              applications-science
 ^tag(utilities)
 Screenshot,         xfce4-screenshooter,              preferences-desktop-display
 Gparted,            gksudo gparted,                   gparted
-Fastfetch,          x-terminal-emulator -T 'Fastfetch' -e bash -c "fastfetch; bash",  utilities-system-monitor
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Font Viewer,        yad --font,                       preferences-desktop-font
 Color Chooser,      yad --color --gtk-palette --palette=/usr/share/X11/rgb.txt,                     org.xfce.settings.color
