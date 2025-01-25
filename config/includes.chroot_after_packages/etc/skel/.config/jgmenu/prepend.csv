@@ -44,8 +44,7 @@ Install Extras,     ld-installers,                    preferences-system-search
 ^tag(toggles)
 Picom,               toggle.picom,                                  org.xfce.settings.manager
 Sounds,              notification-sounds,                           org.xfce.settings.manager
-Rofi Icons,          rofi-options,                                  org.xfce.settings.manager
-Font Sizes,          fontsize-changer,                              org.xfce.settings.manager
+Font Size,           fontsize-changer,                              org.xfce.settings.manager
 Hotcorners,          toggle.ld,                                     org.xfce.settings.manager
 Random BG,           toggle-wallpaper-random,                       org.xfce.settings.manager
 Jgmenu Icons,        jg-icon-changer,                               org.xfce.settings.manager
